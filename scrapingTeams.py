@@ -25,7 +25,7 @@ def scrape_teams():
             dados = primeiro_item['data']
             matches = dados['matches']
             
-            caminho_arquivo = "teamsMatches-"+houseBet+".json"
+            caminho_arquivo = "scriptJson/teamsMatches-"+houseBet+".json"
             with open(caminho_arquivo, "w") as arquivo_saida:
                 json.dump(matches, arquivo_saida)
             

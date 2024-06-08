@@ -20,7 +20,7 @@ def scrape_matches():
         objeto_python = json.loads(html_content)
         # print(objeto_python)
         # Caminho para o arquivo de saída JSON
-        caminho_arquivo = "matches-"+houseBet+".json"
+        caminho_arquivo = "scriptJson/matches-"+houseBet+".json"
 
         # Salvar o objeto Python como JSON em um arquivo
         with open(caminho_arquivo, "w") as arquivo_saida:
