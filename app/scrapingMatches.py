@@ -1,13 +1,14 @@
 import requests
 import json
 
-def scrape_matches():
+
+def scrape_matches(houseBet):
     headers = {
         'User-Agent': 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Mobile Safari/537.36'
     }
-    houseBet = 'unibet'
 
-    url = 'https://s5.sir.sportradar.com/'+houseBet+'/br/1/season/113943/fixtures/full'
+    url = 'https://s5.sir.sportradar.com/' + \
+        houseBet+'/br/1/season/113943/fixtures/full'
 
     response = requests.get(url, headers=headers)
 

@@ -2,11 +2,13 @@ import json
 from scrapingTeams import scrape_teams
 from scrapingMatches import scrape_matches
 
-def main():
+
+def getData(houseBet):
+
     # Chamando as funções de scraping dos dois scripts
-    teams_json_path = scrape_teams()
-    matches_json_path = scrape_matches()
-    
+    teams_json_path = scrape_teams(houseBet)
+    matches_json_path = scrape_matches(houseBet)
+
     # Acessando os dados dos arquivos JSON
     with open(teams_json_path, 'r') as teams_file:
         teams_data = json.load(teams_file)
@@ -20,9 +22,9 @@ def main():
         # Convertendo o partida_id para string
         partida_id_str = str(partida_id)
         try:
-            team_odd ={ 
-                'date':team['time']['date'],
-                'match_id':partida_id,
+            team_odd = {
+                'date': team['time']['date'],
+                'match_id': partida_id,
                 'team_home_id': team['teams']['home']['_id'],
                 'home': team['teams']['home']['name'],
                 'home_odds': matches_data['fetchedData']['stats_season_odds/113943']['data']['odds'][partida_id_str][0]['home']['odds'],
@@ -35,8 +37,8 @@ def main():
             # print(f"Erro ao acessar as odds para a partida {partida_id_str}: {e}")
             # Definindo os valores para 0
             team_odd = {
-                'date':team['time']['date'],
-                'match_id':partida_id,
+                'date': team['time']['date'],
+                'match_id': partida_id,
                 'team_home_id': team['teams']['home']['_id'],
                 'home': team['teams']['home']['name'],
                 'home_odds': 'n/a',
@@ -46,9 +48,5 @@ def main():
                 'draw_odds': 'n/a',
             }
         odds.append(team_odd)
-        for odd in odds:
-            print(odd)
 
-
-if __name__ == "__main__":
-    main()
+    return odds
