@@ -1,4 +1,5 @@
 import json
+from datetime import datetime, timedelta
 
 # Abre o arquivo JSON e carrega os dados
 with open("all.json", 'r') as arquivo:
@@ -104,17 +105,30 @@ for a in liest_home[0]['data']:
                     'odds_b': draw_odds_b,
                     'lucro': lucro
                 })
+hoje = datetime.now().date()
+amanha = hoje + timedelta(days=1)
+ontem = hoje + timedelta(days=-1)
 
 # Imprimir as oportunidades de Surebet com exemplo de investimento de 10 reais
 if surebets:
     for sb in surebets:
-        print("Oportunidade de Surebet encontrada:")
-        print(f"Data: {sb['date']}")
-        print(f"Partida: {sb['match']}")
-        print(f"Tipo de Surebet: {sb['tipo']}")
-        print(
-            f"Odds {a_odd_name}: {sb['odds_a']} | Odds {b_odd_name}: {sb['odds_b']}")
-        print(f"Lucro com investimento de R$ 10,00: R$ {sb['lucro']:.2f}")
-        print()
-else:
-    print("Não foram encontradas oportunidades de Surebet com os critérios fornecidos.")
+        data_surebet = datetime.strptime(sb['date'], '%d/%m/%y').date()
+        if data_surebet == hoje or data_surebet == amanha:
+            # print("Oportunidade de Surebet encontrada:")
+            # print(f"Data: {sb['date']}")
+            # print(f"Partida: {sb['match']}")
+            # print(f"Tipo de Surebet: {sb['tipo']}")
+            # print(f"Odds {a_odd_name}: {sb['odds_a']} | Odds {b_odd_name}: {sb['odds_b']}")
+            # print(f"Lucro com investimento de R$ 10,00: R$ {sb['lucro']:.2f}")
+            # print()
+            message = (
+                "**Oportunidade de Surebet encontrada:**\n"
+                f"**Data:** {sb['date']}\n"
+                f"**Partida:** {sb['match']}\n"
+                f"**Tipo de Surebet:** {sb['tipo']}\n"
+                f"**Odds {a_odd_name}:** {sb['odds_a']} | **Odds {b_odd_name}:** {sb['odds_b']}\n"
+                f"**Lucro com investimento de R$ 10,00:** R$ {sb['lucro']:.2f}\n"
+            )
+            # Chame a função da sua API do Telegram para enviar a mensagem
+            from telegramApi import enviar_mensagem_telegram
+            enviar_mensagem_telegram(message)
