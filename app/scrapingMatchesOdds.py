@@ -51,15 +51,14 @@ if response.status_code == 200:
                 "away_odds": away_odds, 
                 "draw_odds": draw_odds
             })
-data_matches=[]
-data_list=[]
 unique_house_names = set()
 for bet in organized_data:
     unique_house_names.add(bet['house_name'])
     unique_house_names_list = list(unique_house_names)
 for house in unique_house_names_list:
+    data_list = []
     for bet in organized_data:
-        if(bet['house_name']==house):
+        if bet['house_name']==house:
             data_list.append({
                 "date": bet['date'], 
                 "match_id": 'n/a', 
@@ -71,12 +70,11 @@ for house in unique_house_names_list:
                 "away_odds": bet['away_odds'], 
                 "draw_odds": bet['draw_odds']
             })
-            data_matches.append({
-                "house":house,
-                "data":data_list
-            })
-
-            caminho_arquivo = "scriptJson/teamsMatches-"+house+".json"
-            with open(caminho_arquivo, "w") as arquivo_saida:
-                json.dump(data_matches, arquivo_saida)
+    house_data = {
+        "house":house,
+        "data":data_list
+    }
+    caminho_arquivo = "scriptJson/teamsMatches-"+house+".json"
+    with open(caminho_arquivo, "w") as arquivo_saida:
+        json.dump(house_data, arquivo_saida)
        
