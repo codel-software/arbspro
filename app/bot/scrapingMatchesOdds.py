@@ -74,7 +74,7 @@ for house in unique_house_names_list:
         "house":house,
         "data":data_list
     }
-    caminho_arquivo = "scriptJson/teamsMatches-"+house+".json"
+    caminho_arquivo = "../scriptJson/teamsMatches-"+house+".json"
     with open(caminho_arquivo, "w") as arquivo_saida:
         json.dump(house_data, arquivo_saida)
        
