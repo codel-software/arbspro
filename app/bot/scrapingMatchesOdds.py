@@ -33,11 +33,20 @@ if response.status_code == 200:
                 if market['key'] == 'h2h':
                     for outcome in market['outcomes']:
                         if outcome['name'] == home_team:
-                            home_odds = outcome['price'] / 100
+                            if outcome['price'] < 0:
+                                home_odds = 1 + (100 / abs(outcome['price']))
+                            else:
+                                home_odds = 1  + (outcome['price'] / 100)
                         elif outcome['name'] == away_team:
-                            away_odds = outcome['price'] / 100
+                            if outcome['price'] < 0:
+                                away_odds = 1 + (100 / abs(outcome['price']))
+                            else:
+                                away_odds = 1  + (outcome['price'] / 100)
                         elif outcome['name'] == "Draw":
-                            draw_odds = outcome['price'] / 100
+                            if outcome['price'] < 0:
+                                draw_odds = 1 + (100 / abs(outcome['price']))
+                            else:
+                                draw_odds = 1  + (outcome['price'] / 100)
         
             organized_data.append({
                 "house_name": house_name,
