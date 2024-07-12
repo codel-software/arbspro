@@ -1,12 +1,14 @@
 import json
-from core.match import Match
+from match import Match
+
+
 class House:
     def __init__(self):
         self.name = ''
         self.match_list = []
 
-    def loadJson(self,pathJson,model):
-        with open("./scriptJson/teamsMatches-"+pathJson+".json", 'r') as arquivo:
+    def loadJson(self, pathJson, model):
+        with open("../scriptJson/teamsMatches-"+pathJson+".json", 'r') as arquivo:
             jsonMatches = json.load(arquivo)
             self.name = jsonMatches['house']
             for house_match in jsonMatches['data']:
