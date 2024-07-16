@@ -6,3 +6,4 @@ class Match:
         self.time_b = ''
         self.odds_a = ''
         self.odds_b = ''
+        self.draw_odds = ''

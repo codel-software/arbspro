@@ -38,20 +38,17 @@ def getOldds():
                         for outcome in market['outcomes']:
                             if outcome['name'] == home_team:
                                 if outcome['price'] < 0:
-                                    home_odds = 1 + \
-                                        (100 / abs(outcome['price']))
+                                    home_odds = 1 +  (100 / abs(outcome['price']))
                                 else:
                                     home_odds = 1 + (outcome['price'] / 100)
                             elif outcome['name'] == away_team:
                                 if outcome['price'] < 0:
-                                    away_odds = 1 + \
-                                        (100 / abs(outcome['price']))
+                                    away_odds = 1 + (100 / abs(outcome['price']))
                                 else:
                                     away_odds = 1 + (outcome['price'] / 100)
                             elif outcome['name'] == "Draw":
                                 if outcome['price'] < 0:
-                                    draw_odds = 1 + \
-                                        (100 / abs(outcome['price']))
+                                    draw_odds = 1 +  (100 / abs(outcome['price']))
                                 else:
                                     draw_odds = 1 + (outcome['price'] / 100)
 

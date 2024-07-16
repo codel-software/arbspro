@@ -27,11 +27,11 @@ def getData(houseBet):
                 'match_id': partida_id,
                 'team_home_id': team['teams']['home']['_id'],
                 'home': team['teams']['home']['name'],
-                'home_odds': matches_data['fetchedData']['stats_season_odds/113943']['data']['odds'][partida_id_str][0]['home']['odds'],
+                'home_odds': float(matches_data['fetchedData']['stats_season_odds/113943']['data']['odds'][partida_id_str][0]['home']['odds']),
                 'away': team['teams']['away']['name'],
                 'team_away_id': team['teams']['away']['_id'],
-                'away_odds': matches_data['fetchedData']['stats_season_odds/113943']['data']['odds'][partida_id_str][0]['away']['odds'],
-                'draw_odds': matches_data['fetchedData']['stats_season_odds/113943']['data']['odds'][partida_id_str][0]['draw']['odds'],
+                'away_odds': float(matches_data['fetchedData']['stats_season_odds/113943']['data']['odds'][partida_id_str][0]['away']['odds']),
+                'draw_odds': float(matches_data['fetchedData']['stats_season_odds/113943']['data']['odds'][partida_id_str][0]['draw']['odds']),
             }
         except KeyError as e:
             # print(f"Erro ao acessar as odds para a partida {partida_id_str}: {e}")
@@ -41,11 +41,11 @@ def getData(houseBet):
                 'match_id': partida_id,
                 'team_home_id': team['teams']['home']['_id'],
                 'home': team['teams']['home']['name'],
-                'home_odds': 'n/a',
+                'home_odds': 0,
                 'away': team['teams']['away']['name'],
                 'team_away_id': team['teams']['away']['_id'],
-                'away_odds': 'n/a',
-                'draw_odds': 'n/a',
+                'away_odds': 0,
+                'draw_odds': 0,
             }
         odds.append(team_odd)
 
