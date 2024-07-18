@@ -74,23 +74,29 @@ def run():
         # Imprimir os resultados ou realizar outras operações com as surebets
         surebet_calculate = CalculoCustos()
         real_surebets = surebet_calculate.process_surebets(lista_possiveis_surebets)
-        calculate_real_surebets(real_surebets)
-
+        soma_totais = calculate_real_surebets(real_surebets)
+        for real_surebet in real_surebets:
+            # Estou neste momento, faço os calculos da função abaixo calculate_real_surebets
+            # Após o calculo verificar se o calculo de locao esta correto e salvar os dados
+            # enviar para o telegram.
+            # locacao = (26.38/40.89)*(1-(0.17/1.66))*(1-(0.07/1.36))*100
+            locacao = (real_surebet['retorno_esperado']/soma_totais['total_retorno'])*(1-(soma_totais['total_c']/soma_totais['custo_transacao']))*(1-real_surebet['volatilidade']/soma_totais['total_volatilidade'])*100
+            print(locacao)
 def calculate_real_surebets(surebet_calculate):
     custo_transacao = (49.9/30)/10
     total_retorno = 0
     total_volatilidade = 0
     total_c = 10 * custo_transacao
-    # for surebet in surebet_calculate:
-    #     total_retorno += surebet['retorno_esperado']
-    #     total_volatilidade += surebet['volatilidade']
-    # resultado = {
-    #     'total_retorno': total_retorno,
-    #     'total_volatilidade': total_volatilidade,
-    #     'total_custo_transacao': total_c
-    # }
-    # print(resultado)
-    # return resultado
+    for surebet_real in surebet_calculate:
+        total_retorno += surebet_real['retorno_esperado']
+        total_volatilidade += surebet_real['volatilidade']
+    resultado = {
+        'total_retorno': total_retorno,
+        'total_volatilidade': total_volatilidade,
+        'total_c': total_c,
+        'custo_transacao':custo_transacao
+    }
+    return resultado
         
 
 

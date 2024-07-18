@@ -5,7 +5,6 @@ class CalculoCustos:
         possible_surebets_list = lista_possiveis_surebets
         list_surebet = []
         for surebet_key in possible_surebets_list:
-            print(surebet_key)
             if surebet_key['aposta_11_22'] < 1:
                 surebet = {
                     'casa_a': surebet_key['casa_a'],
