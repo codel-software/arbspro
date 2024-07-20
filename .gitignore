@@ -3,3 +3,5 @@ __pycache__/
 .pytest_cache/
 app/all.json
 .vscode
+app/scriptJson/*json
+app/data
