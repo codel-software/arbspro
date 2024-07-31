@@ -11,7 +11,6 @@ import math
 
 def process_odd(odd_1, odd_2):
     surebets = []  # Usando um conjunto para garantir que cada surebet seja único
-
     for match_odd_1 in odd_1.match_list:
         for match_odd_2 in odd_2.match_list:
             if match_odd_1.time_a == match_odd_2.time_a and \
@@ -33,6 +32,8 @@ def process_odd(odd_1, odd_2):
                     "odds_b_time_a": match_odd_1.odds_b,
                     "odds_a_time_b": match_odd_2.odds_a,
                     "odds_b_time_b": match_odd_2.odds_b,
+                    "odds_a_draw": match_odd_1.draw_odds,
+                    "odds_b_draw": match_odd_2.draw_odds,
                     "aposta_11_22": aposta_11_22,
                     "aposta_21_12": aposta_21_12,
                     "retorno_esperado_aposta_11_22": (1-aposta_11_22)*100,
@@ -77,6 +78,7 @@ def run():
         real_surebets = surebet_calculate.process_surebets(lista_possiveis_surebets)
         soma_totais = calculate_real_surebets(real_surebets)
         for real_surebet in real_surebets:
+            print(real_surebet)
             parte_1 = (real_surebet['retorno_esperado']/soma_totais['total_retorno']) 
             parte_2 = (1-(soma_totais['custo_transacao']/soma_totais['total_c'])) 
             parte_3 = (1-(real_surebet['volatilidade']/soma_totais['total_volatilidade']))
@@ -101,7 +103,6 @@ def run():
                         f"**Alocação Proporcional - Time 2:** {sb['locacao_proporcional_2']}\n"
                         # f"**Lucro com investimento de R$ 10,00:** R$ {sb['lucro']:.2f}\n"
                     )
-                    print(message)
                     # Chame a função da sua API do Telegram para enviar a mensagem
                     # enviar_mensagem_telegram(message)
 def calculate_real_surebets(surebet_calculate):
