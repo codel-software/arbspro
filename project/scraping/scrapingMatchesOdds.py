@@ -2,6 +2,14 @@ import requests
 import json
 from datetime import datetime
 
+team_mapping = {
+    "Vasco da Gama": "Vasco Gama",
+    "Bragantino-SP": "Bragantino",
+    "Cuiabá" : "Cuiabá EC"
+}
+
+def normalize_team_name(name):
+    return team_mapping.get(name, name)
 
 def getOddsApi():
     key = 'f1a81edf0e979ab9669a3e6a983ff19a'
@@ -51,13 +59,14 @@ def getOddsApi():
                                     draw_odds = 1 +  (100 / abs(outcome['price']))
                                 else:
                                     draw_odds = 1 + (outcome['price'] / 100)
-
+                normalized_home_team = normalize_team_name(home_team)
+                normalized_away_team = normalize_team_name(away_team)
                 organized_data.append({
                     "house_name": house_name,
                     "date": date,
-                    "home": home_team,
+                    "home": normalized_home_team,
                     "home_odds": home_odds,
-                    "away": away_team,
+                    "away": normalized_away_team,
                     "away_odds": away_odds,
                     "draw_odds": draw_odds
                 })
