@@ -1,5 +1,6 @@
 from house import House
 from scraping import sportRadar
+from calculo import getSurebets
 from scraping import scrapingMatchesOdds
 from datetime import datetime, timedelta
 import math
@@ -11,7 +12,7 @@ def identify_surebets(matches):
     surebets = []
 
     today = datetime.now().date()
-    end_date = today + timedelta(days=2)
+    end_date = today + timedelta(days=4)
     
     # Filtrar partidas para o intervalo de datas desejado
     filtered_matches = [match for match in matches if today <= datetime.strptime(match.match_date, '%d-%m-%Y').date() <= end_date]
@@ -38,7 +39,7 @@ def identify_surebets(matches):
                     odds_b = match_list[j].odds_b
                     draw_odds = match_list[k].draw_odds
                     surebet_value = calculate_surebet(odds_a, odds_b, draw_odds)
-                    if surebet_value < 1.04:
+                    if surebet_value < 1.03:
                         average_odds = (match_list[i].odds_a + match_list[i].odds_b + match_list[i].draw_odds + \
                                         match_list[j].odds_a + match_list[j].odds_b + match_list[j].draw_odds + \
                                         match_list[k].odds_a + match_list[k].odds_b + match_list[k].draw_odds) / 9
@@ -54,12 +55,12 @@ def identify_surebets(matches):
                                                 (match_list[k].draw_odds - average_odds) ** 2) / 9)
 
                         surebets.append({
-                            'combination': f"{match_list[i].house} (A) - {match_list[j].house} (B) - {match_list[k].house} (Draw)",
-                            'value': surebet_value,
+                            'combination': f"{match_list[i].house} ({match_list[i].time_a}) - {match_list[j].house} ({match_list[j].time_b}) - {match_list[k].house} (Draw)",
+                            'implied_probability': surebet_value,
                             'odds': (odds_a, odds_b, draw_odds),
                             'date': key[0],
                             'teams': (key[1], key[2]),
-                            'expected_return': (1 - surebet_value) * 100,
+                            'expected_return': (1.03 - surebet_value) * 100,
                             'average_odds': average_odds,
                             'volatility': volatility,
                             'house_odds': {
@@ -98,4 +99,5 @@ for house in houses:
     for i in h.match_list:
         list_house_odds.append(i)
 surebets = identify_surebets(list_house_odds)
-print(surebets)
+calculo = getSurebets(surebets)
+print(calculo)
