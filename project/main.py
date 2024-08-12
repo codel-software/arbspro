@@ -39,7 +39,7 @@ def identify_surebets(matches):
                     odds_b = match_list[j].odds_b
                     draw_odds = match_list[k].draw_odds
                     surebet_value = calculate_surebet(odds_a, odds_b, draw_odds)
-                    if surebet_value < 1.03:
+                    if surebet_value < 1:
                         average_odds = (match_list[i].odds_a + match_list[i].odds_b + match_list[i].draw_odds + \
                                         match_list[j].odds_a + match_list[j].odds_b + match_list[j].draw_odds + \
                                         match_list[k].odds_a + match_list[k].odds_b + match_list[k].draw_odds) / 9
@@ -60,7 +60,7 @@ def identify_surebets(matches):
                             'odds': (odds_a, odds_b, draw_odds),
                             'date': key[0],
                             'teams': (key[1], key[2]),
-                            'expected_return': (1.03 - surebet_value) * 100,
+                            'expected_return': (1 - surebet_value) * 100,
                             'average_odds': average_odds,
                             'volatility': volatility,
                             'house_odds': {
@@ -82,22 +82,25 @@ def identify_surebets(matches):
                             }
                         })
     return surebets
+def main():
+    call_sport_radar = sportRadar.run()
+    call_odds_api = scrapingMatchesOdds.getOddsApi()
 
-call_sport_radar = sportRadar.run()
-call_odds_api = scrapingMatchesOdds.getOddsApi()
+    houses = []
+    for return_house in call_sport_radar:
+        houses.append(return_house)
+    for return_house in call_odds_api:
+        houses.append(return_house)
 
-houses = []
-for return_house in call_sport_radar:
-    houses.append(return_house)
-for return_house in call_odds_api:
-    houses.append(return_house)
+    list_house_odds = []
+    for house in houses:
+        h = House()
+        h.loadJson(pathJson=house)
+        for i in h.match_list:
+            list_house_odds.append(i)
+    surebets = identify_surebets(list_house_odds)
+    calculo = getSurebets(surebets)
+    return calculo
 
-list_house_odds = []
-for house in houses:
-    h = House()
-    h.loadJson(pathJson=house)
-    for i in h.match_list:
-        list_house_odds.append(i)
-surebets = identify_surebets(list_house_odds)
-calculo = getSurebets(surebets)
-print(calculo)
+get_surebets = main()
+print(get_surebets)
