@@ -117,4 +117,4 @@ def main():
     return calculo
 while True:
     get_surebets = main()
-    time.sleep(60*3)
+    time.sleep(4*60*60)
