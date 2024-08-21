@@ -5,7 +5,7 @@ from scraping import scrapingMatchesOdds
 from datetime import datetime, timedelta
 from telegramApi import enviar_mensagem_telegram
 import math
-
+import time
 
 def calculate_surebet(odds_a, odds_b, draw_odds):
     return (1 / odds_a) + (1 / odds_b) + (1 / draw_odds)
@@ -115,6 +115,6 @@ def main():
     surebets = identify_surebets(list_house_odds)
     calculo = getSurebets(surebets)
     return calculo
-
-get_surebets = main()
-print(get_surebets)
+while True:
+    get_surebets = main()
+    time.sleep(60*3)
