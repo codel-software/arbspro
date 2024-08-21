@@ -3,6 +3,7 @@ from scraping import sportRadar
 from calculo import getSurebets
 from scraping import scrapingMatchesOdds
 from datetime import datetime, timedelta
+from telegramApi import enviar_mensagem_telegram
 import math
 
 
@@ -10,7 +11,7 @@ def calculate_surebet(odds_a, odds_b, draw_odds):
     return (1 / odds_a) + (1 / odds_b) + (1 / draw_odds)
 def identify_surebets(matches):
     surebets = []
-
+    combinations = []
     today = datetime.now().date()
     end_date = today + timedelta(days=4)
     
@@ -39,6 +40,13 @@ def identify_surebets(matches):
                     odds_b = match_list[j].odds_b
                     draw_odds = match_list[k].draw_odds
                     surebet_value = calculate_surebet(odds_a, odds_b, draw_odds)
+                    combinations.append({
+                            'combination': f"{match_list[i].house} ({match_list[i].time_a}) - {match_list[j].house} ({match_list[j].time_b}) - {match_list[k].house} (Draw)",
+                            'implied_probability': surebet_value,
+                            'odds': (odds_a, odds_b, draw_odds),
+                            'date': key[0],
+                            'teams': (key[1], key[2])
+                            })
                     if surebet_value < 1:
                         average_odds = (match_list[i].odds_a + match_list[i].odds_b + match_list[i].draw_odds + \
                                         match_list[j].odds_a + match_list[j].odds_b + match_list[j].draw_odds + \
@@ -81,6 +89,12 @@ def identify_surebets(matches):
                                 }
                             }
                         })
+    message = (
+                "**!!Busca de surebets!!**\n"
+                f"**Qtde de combinações:** {len(combinations)}\n"
+                f"**Qtde de surebets encontradas:** {len(surebets)}\n"
+            )
+    enviar_mensagem_telegram(message)
     return surebets
 def main():
     call_sport_radar = sportRadar.run()
