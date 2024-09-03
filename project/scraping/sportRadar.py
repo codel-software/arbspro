@@ -3,7 +3,7 @@ from scraping.scrapingMatches import scrape_matches
 import json
 
 def run():
-    list_house = ['unibet', 'bet365']
+    list_house = ['unibet', 'bet365','betclic']
     data = []
     for house in list_house:
         print(">>>>> Processing sportRadar", house)
