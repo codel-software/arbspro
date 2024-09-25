@@ -6,6 +6,7 @@ from datetime import datetime, timedelta
 from telegramApi import enviar_mensagem_telegram
 import math
 import time
+import json
 
 def calculate_surebet(odds_a, odds_b, draw_odds):
     return (1 / odds_a) + (1 / odds_b) + (1 / draw_odds)
@@ -95,6 +96,10 @@ def identify_surebets(matches):
                 f"**Qtde de surebets encontradas:** {len(surebets)}\n"
             )
     enviar_mensagem_telegram(message)
+    surebets_json = json.dumps(surebets, indent=4)  # Converte para JSON com indentação
+
+    with open('surebets.json', 'w') as json_file:
+        json_file.write(surebets_json)
     return surebets
 def main():
     call_sport_radar = sportRadar.run()
@@ -115,6 +120,18 @@ def main():
     surebets = identify_surebets(list_house_odds)
     calculo = getSurebets(surebets)
     return calculo
+def tempo_ate_proximo_horario():
+    agora = datetime.now()
+    horarios = [6, 12, 18]
+    
+    for hora in horarios:
+        proximo_horario = agora.replace(hour=hora, minute=0, second=0, microsecond=0)
+        if proximo_horario > agora:
+            return (proximo_horario - agora).total_seconds()
+    
+    proximo_horario = agora.replace(day=agora.day + 1, hour=6, minute=0, second=0, microsecond=0)
+    return (proximo_horario - agora).total_seconds()
 while True:
     get_surebets = main()
-    time.sleep(4*60*60)
+    tempo_de_espera = tempo_ate_proximo_horario()
+    time.sleep(tempo_de_espera)

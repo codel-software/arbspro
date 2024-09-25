@@ -12,7 +12,7 @@ def normalize_team_name(name):
     return team_mapping.get(name, name)
 
 def getOddsApi():
-    key = 'f1a81edf0e979ab9669a3e6a983ff19a'
+    key = '9c448318f44a5d30f12fe7fbb2e1cf3a'
     url = 'https://api.the-odds-api.com/v4/sports/soccer_brazil_campeonato/odds/?apiKey=' + \
         key+'&regions=us&markets=h2h,spreads&oddsFormat=american'
     headers = {

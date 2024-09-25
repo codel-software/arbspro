@@ -2,13 +2,13 @@ import requests
 import json
 
 
-def scrape_matches(houseBet):
+def scrape_matches(houseBet,game_type,type_name):
     headers = {
         'User-Agent': 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Mobile Safari/537.36'
     }
 
     url = 'https://s5.sir.sportradar.com/' + \
-        houseBet+'/br/1/season/113943/fixtures/full'
+        houseBet+'/br/1/season/'+game_type+'/fixtures/full'
 
     response = requests.get(url, headers=headers)
 
@@ -21,7 +21,7 @@ def scrape_matches(houseBet):
         objeto_python = json.loads(html_content)
         # print(objeto_python)
         # Caminho para o arquivo de saída JSON
-        caminho_arquivo = "./json/matches-"+houseBet+".json"
+        caminho_arquivo = "./json/matches-"+houseBet+'-'+type_name+".json"
 
         # Salvar o objeto Python como JSON em um arquivo
         with open(caminho_arquivo, "w") as arquivo_saida:
