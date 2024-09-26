@@ -97,8 +97,8 @@ def identify_surebets(matches):
             )
     enviar_mensagem_telegram(message)
     surebets_json = json.dumps(surebets, indent=4)  # Converte para JSON com indentação
-
-    with open('surebets.json', 'w') as json_file:
+    timestamp = str(int(time.time()))
+    with open('./surebetsJson/'+timestamp+'-surebets.json', 'w') as json_file:
         json_file.write(surebets_json)
     return surebets
 def main():
