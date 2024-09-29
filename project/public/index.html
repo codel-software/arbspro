@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filtrar Apostas por Casas de Apostas</title>
+    
+    <!-- Bootstrap CSS via CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Vue.js via CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    
+    <!-- Axios para requisição HTTP via CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    
+    <style>
+        body {
+            padding: 20px;
+        }
+        .bet-container {
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div id="app" class="container">
+        <h1 class="text-center">Filtrar Apostas por Casas de Aposta</h1>
+        
+        <!-- Filtro por Casa de Aposta -->
+        <div class="mb-4">
+            <label for="houseFilter" class="form-label">Selecione uma Casa de Aposta:</label>
+            <select v-model="selectedHouse" id="houseFilter" class="form-control">
+                <option value="">Todas</option>
+                <option v-for="house in availableHouses" :key="house" :value="house">{{ house }}</option>
+            </select>
+        </div>
+
+        <!-- Lista de Apostas -->
+        <div v-for="bet in filteredBets" :key="bet.combination" class="bet-container border p-3">
+            <h5>{{ bet.combination }}</h5>
+            <p><strong>Probabilidade Implícita:</strong> {{ bet.implied_probability }}</p>
+            <p><strong>Retorno Esperado:</strong> {{ bet.expected_return }}</p>
+            <p><strong>Odds Médias:</strong> {{ bet.average_odds }}</p>
+            <p><strong>Volatilidade:</strong> {{ bet.volatility }}</p>
+            <p><strong>Data:</strong> {{ bet.date }}</p>
+            <div class="mt-2">
+                <strong>Odds por Casa:</strong>
+                <ul>
+                    <li v-for="(odds, house) in bet.house_odds" :key="house">{{ house }} - A: {{ odds.odd_a }}, B: {{ odds.odd_b }}, Empate: {{ odds.draw }}</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS e Popper.js via CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        new Vue({
+            el: '#app',
+            data: {
+                bets: [],
+                selectedHouse: '',
+                availableHouses: []
+            },
+            computed: {
+                // Filtra as apostas de acordo com a casa selecionada
+                filteredBets() {
+                    if (this.selectedHouse === '') {
+                        return this.bets;
+                    }
+                    return this.bets.filter(bet => this.selectedHouse in bet.house_odds);
+                }
+            },
+            methods: {
+                // Carrega o JSON de apostas
+                loadBets() {
+                    axios.get('/data.json')
+                        .then(response => {
+                            this.bets = response.data;
+                            this.extractHouses();
+                        })
+                        .catch(error => {
+                            console.error("Erro ao carregar o JSON:", error);
+                        });
+                },
+                // Extrai todas as casas de apostas disponíveis no JSON
+                extractHouses() {
+                    let houses = new Set();
+                    this.bets.forEach(bet => {
+                        Object.keys(bet.house_odds).forEach(house => {
+                            houses.add(house);
+                        });
+                    });
+                    this.availableHouses = Array.from(houses);
+                }
+            },
+            mounted() {
+                this.loadBets(); // Carrega as apostas ao iniciar o app
+            }
+        });
+    </script>
+</body>
+</html>

@@ -8,17 +8,21 @@ import math
 import time
 import json
 
+
 def calculate_surebet(odds_a, odds_b, draw_odds):
     return (1 / odds_a) + (1 / odds_b) + (1 / draw_odds)
+
+
 def identify_surebets(matches):
     surebets = []
     combinations = []
     today = datetime.now().date()
     end_date = today + timedelta(days=4)
-    
+
     # Filtrar partidas para o intervalo de datas desejado
-    filtered_matches = [match for match in matches if today <= datetime.strptime(match.match_date, '%d-%m-%Y').date() <= end_date]
-    
+    filtered_matches = [match for match in matches if today <= datetime.strptime(
+        match.match_date, '%d-%m-%Y').date() <= end_date]
+
     grouped_matches = {}
     for match in filtered_matches:
         # print(match.match_date,'-',match.time_a,'-',match.time_b,'-',match.house)
@@ -40,27 +44,28 @@ def identify_surebets(matches):
                     odds_a = match_list[i].odds_a
                     odds_b = match_list[j].odds_b
                     draw_odds = match_list[k].draw_odds
-                    surebet_value = calculate_surebet(odds_a, odds_b, draw_odds)
+                    surebet_value = calculate_surebet(
+                        odds_a, odds_b, draw_odds)
                     combinations.append({
-                            'combination': f"{match_list[i].house} ({match_list[i].time_a}) - {match_list[j].house} ({match_list[j].time_b}) - {match_list[k].house} (Draw)",
-                            'implied_probability': surebet_value,
-                            'odds': (odds_a, odds_b, draw_odds),
-                            'date': key[0],
-                            'teams': (key[1], key[2])
-                            })
+                        'combination': f"{match_list[i].house} ({match_list[i].time_a}) - {match_list[j].house} ({match_list[j].time_b}) - {match_list[k].house} (Draw)",
+                        'implied_probability': surebet_value,
+                        'odds': (odds_a, odds_b, draw_odds),
+                        'date': key[0],
+                        'teams': (key[1], key[2])
+                    })
                     if surebet_value < 1:
-                        average_odds = (match_list[i].odds_a + match_list[i].odds_b + match_list[i].draw_odds + \
-                                        match_list[j].odds_a + match_list[j].odds_b + match_list[j].draw_odds + \
+                        average_odds = (match_list[i].odds_a + match_list[i].odds_b + match_list[i].draw_odds +
+                                        match_list[j].odds_a + match_list[j].odds_b + match_list[j].draw_odds +
                                         match_list[k].odds_a + match_list[k].odds_b + match_list[k].draw_odds) / 9
-                        
-                        volatility = math.sqrt(((match_list[i].odds_a - average_odds) ** 2 + \
-                                                (match_list[i].odds_b - average_odds) ** 2 + \
-                                                (match_list[i].draw_odds - average_odds) ** 2 + \
-                                                (match_list[j].odds_a - average_odds) ** 2 + \
-                                                (match_list[j].odds_b - average_odds) ** 2 + \
-                                                (match_list[j].draw_odds - average_odds) ** 2 + \
-                                                (match_list[k].odds_a - average_odds) ** 2 + \
-                                                (match_list[k].odds_b - average_odds) ** 2 + \
+
+                        volatility = math.sqrt(((match_list[i].odds_a - average_odds) ** 2 +
+                                                (match_list[i].odds_b - average_odds) ** 2 +
+                                                (match_list[i].draw_odds - average_odds) ** 2 +
+                                                (match_list[j].odds_a - average_odds) ** 2 +
+                                                (match_list[j].odds_b - average_odds) ** 2 +
+                                                (match_list[j].draw_odds - average_odds) ** 2 +
+                                                (match_list[k].odds_a - average_odds) ** 2 +
+                                                (match_list[k].odds_b - average_odds) ** 2 +
                                                 (match_list[k].draw_odds - average_odds) ** 2) / 9)
 
                         surebets.append({
@@ -91,16 +96,19 @@ def identify_surebets(matches):
                             }
                         })
     message = (
-                "**!!Busca de surebets!!**\n"
-                f"**Qtde de combinações:** {len(combinations)}\n"
-                f"**Qtde de surebets encontradas:** {len(surebets)}\n"
-            )
+        "**!!Busca de surebets!!**\n"
+        f"**Qtde de combinações:** {len(combinations)}\n"
+        f"**Qtde de surebets encontradas:** {len(surebets)}\n"
+    )
     enviar_mensagem_telegram(message)
-    surebets_json = json.dumps(surebets, indent=4)  # Converte para JSON com indentação
+    # Converte para JSON com indentação
+    surebets_json = json.dumps(surebets, indent=4)
     timestamp = str(int(time.time()))
     with open('./surebetsJson/'+timestamp+'-surebets.json', 'w') as json_file:
         json_file.write(surebets_json)
     return surebets
+
+
 def main():
     call_sport_radar = sportRadar.run()
     call_odds_api = scrapingMatchesOdds.getOddsApi()
@@ -120,17 +128,23 @@ def main():
     surebets = identify_surebets(list_house_odds)
     calculo = getSurebets(surebets)
     return calculo
+
+
 def tempo_ate_proximo_horario():
     agora = datetime.now()
     horarios = [6, 12, 18]
-    
+
     for hora in horarios:
-        proximo_horario = agora.replace(hour=hora, minute=0, second=0, microsecond=0)
+        proximo_horario = agora.replace(
+            hour=hora, minute=0, second=0, microsecond=0)
         if proximo_horario > agora:
             return (proximo_horario - agora).total_seconds()
-    
-    proximo_horario = agora.replace(day=agora.day + 1, hour=6, minute=0, second=0, microsecond=0)
+
+    proximo_horario = agora.replace(
+        day=agora.day + 1, hour=6, minute=0, second=0, microsecond=0)
     return (proximo_horario - agora).total_seconds()
+
+
 while True:
     get_surebets = main()
     tempo_de_espera = tempo_ate_proximo_horario()

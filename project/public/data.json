@@ -1,0 +1,2110 @@
+[
+    {
+        "combination": "unibet (Bragantino) - FanDuel (Internacional) - bet365 (Draw)",
+        "implied_probability": 0.738404452690167,
+        "odds": [
+            3.0,
+            9.8,
+            3.3
+        ],
+        "date": "25-09-2024",
+        "teams": [
+            "Bragantino",
+            "Internacional"
+        ],
+        "expected_return": 26.159554730983302,
+        "average_odds": 4.575925925925926,
+        "volatility": 3.78060442544225,
+        "house_odds": {
+            "unibet": {
+                "odd_a": 3.0,
+                "odd_b": 2.4,
+                "draw": 3.15
+            },
+            "FanDuel": {
+                "odd_a": 13.0,
+                "odd_b": 9.8,
+                "draw": 1.0833333333333333
+            },
+            "bet365": {
+                "odd_a": 3.2,
+                "odd_b": 2.25,
+                "draw": 3.3
+            }
+        }
+    },
+    {
+        "combination": "unibet (Bragantino) - FanDuel (Internacional) - betclic (Draw)",
+        "implied_probability": 0.7548629675512377,
+        "odds": [
+            3.0,
+            9.8,
+            3.13
+        ],
+        "date": "25-09-2024",
+        "teams": [
+            "Bragantino",
+            "Internacional"
+        ],
+        "expected_return": 24.51370324487623,
+        "average_odds": 4.547037037037038,
+        "volatility": 3.7896305707582885,
+        "house_odds": {
+            "unibet": {
+                "odd_a": 3.0,
+                "odd_b": 2.4,
+                "draw": 3.15
+            },
+            "FanDuel": {
+                "odd_a": 13.0,
+                "odd_b": 9.8,
+                "draw": 1.0833333333333333
+            },
+            "betclic": {
+                "odd_a": 3.05,
+                "odd_b": 2.31,
+                "draw": 3.13
+            }
+        }
+    },
+    {
+        "combination": "unibet (Bragantino) - DraftKings (Internacional) - bet365 (Draw)",
+        "implied_probability": 0.703030303030303,
+        "odds": [
+            3.0,
+            15.0,
+            3.3
+        ],
+        "date": "25-09-2024",
+        "teams": [
+            "Bragantino",
+            "Internacional"
+        ],
+        "expected_return": 29.6969696969697,
+        "average_odds": 5.817283950617284,
+        "volatility": 6.086616141373713,
+        "house_odds": {
+            "unibet": {
+                "odd_a": 3.0,
+                "odd_b": 2.4,
+                "draw": 3.15
+            },
+            "DraftKings": {
+                "odd_a": 19.0,
+                "odd_b": 15.0,
+                "draw": 1.0555555555555556
+            },
+            "bet365": {
+                "odd_a": 3.2,
+                "odd_b": 2.25,
+                "draw": 3.3
+            }
+        }
+    },
+    {
+        "combination": "unibet (Bragantino) - DraftKings (Internacional) - betclic (Draw)",
+        "implied_probability": 0.7194888178913738,
+        "odds": [
+            3.0,
+            15.0,
+            3.13
+        ],
+        "date": "25-09-2024",
+        "teams": [
+            "Bragantino",
+            "Internacional"
+        ],
+        "expected_return": 28.051118210862626,
+        "average_odds": 5.788395061728395,
+        "volatility": 6.098110281199953,
+        "house_odds": {
+            "unibet": {
+                "odd_a": 3.0,
+                "odd_b": 2.4,
+                "draw": 3.15
+            },
+            "DraftKings": {
+                "odd_a": 19.0,
+                "odd_b": 15.0,
+                "draw": 1.0555555555555556
+            },
+            "betclic": {
+                "odd_a": 3.05,
+                "odd_b": 2.31,
+                "draw": 3.13
+            }
+        }
+    },
+    {
+        "combination": "unibet (Bragantino) - Bovada (Internacional) - bet365 (Draw)",
+        "implied_probability": 0.7196969696969697,
+        "odds": [
+            3.0,
+            12.0,
+            3.3
+        ],
+        "date": "25-09-2024",
+        "teams": [
+            "Bragantino",
+            "Internacional"
+        ],
+        "expected_return": 28.030303030303028,
+        "average_odds": 4.92962962962963,
+        "volatility": 4.388134800039717,
+        "house_odds": {
+            "unibet": {
+                "odd_a": 3.0,
+                "odd_b": 2.4,
+                "draw": 3.15
+            },
+            "Bovada": {
+                "odd_a": 14.0,
+                "odd_b": 12.0,
+                "draw": 1.0666666666666667
+            },
+            "bet365": {
+                "odd_a": 3.2,
+                "odd_b": 2.25,
+                "draw": 3.3
+            }
+        }
+    },
+    {
+        "combination": "unibet (Bragantino) - Bovada (Internacional) - betclic (Draw)",
+        "implied_probability": 0.7361554845580405,
+        "odds": [
+            3.0,
+            12.0,
+            3.13
+        ],
+        "date": "25-09-2024",
+        "teams": [
+            "Bragantino",
+            "Internacional"
+        ],
+        "expected_return": 26.384451544195954,
+        "average_odds": 4.900740740740741,
+        "volatility": 4.398237519559813,
+        "house_odds": {
+            "unibet": {
+                "odd_a": 3.0,
+                "odd_b": 2.4,
+                "draw": 3.15
+            },
+            "Bovada": {
+                "odd_a": 14.0,
+                "odd_b": 12.0,
+                "draw": 1.0666666666666667
+            },
+            "betclic": {
+                "odd_a": 3.05,
+                "odd_b": 2.31,
+                "draw": 3.13
+            }
+        }
+    },
+    {
+        "combination": "bet365 (Bragantino) - FanDuel (Internacional) - unibet (Draw)",
+        "implied_probability": 0.7320011337868481,
+        "odds": [
+            3.2,
+            9.8,
+            3.15
+        ],
+        "date": "25-09-2024",
+        "teams": [
+            "Bragantino",
+            "Internacional"
+        ],
+        "expected_return": 26.799886621315196,
+        "average_odds": 4.575925925925926,
+        "volatility": 3.78060442544225,
+        "house_odds": {
+            "bet365": {
+                "odd_a": 3.2,
+                "odd_b": 2.25,
+                "draw": 3.3
+            },
+            "FanDuel": {
+                "odd_a": 13.0,
+                "odd_b": 9.8,
+                "draw": 1.0833333333333333
+            },
+            "unibet": {
+                "odd_a": 3.0,
+                "odd_b": 2.4,
+                "draw": 3.15
+            }
+        }
+    },
+    {
+        "combination": "bet365 (Bragantino) - FanDuel (Internacional) - betclic (Draw)",
+        "implied_probability": 0.7340296342179045,
+        "odds": [
+            3.2,
+            9.8,
+            3.13
+        ],
+        "date": "25-09-2024",
+        "teams": [
+            "Bragantino",
+            "Internacional"
+        ],
+        "expected_return": 26.597036578209554,
+        "average_odds": 4.569259259259259,
+        "volatility": 3.7850354395254544,
+        "house_odds": {
+            "bet365": {
+                "odd_a": 3.2,
+                "odd_b": 2.25,
+                "draw": 3.3
+            },
+            "FanDuel": {
+                "odd_a": 13.0,
+                "odd_b": 9.8,
+                "draw": 1.0833333333333333
+            },
+            "betclic": {
+                "odd_a": 3.05,
+                "odd_b": 2.31,
+                "draw": 3.13
+            }
+        }
+    },
+    {
+        "combination": "bet365 (Bragantino) - DraftKings (Internacional) - unibet (Draw)",
+        "implied_probability": 0.6966269841269841,
+        "odds": [
+            3.2,
+            15.0,
+            3.15
+        ],
+        "date": "25-09-2024",
+        "teams": [
+            "Bragantino",
+            "Internacional"
+        ],
+        "expected_return": 30.33730158730159,
+        "average_odds": 5.817283950617284,
+        "volatility": 6.086616141373713,
+        "house_odds": {
+            "bet365": {
+                "odd_a": 3.2,
+                "odd_b": 2.25,
+                "draw": 3.3
+            },
+            "DraftKings": {
+                "odd_a": 19.0,
+                "odd_b": 15.0,
+                "draw": 1.0555555555555556
+            },
+            "unibet": {
+                "odd_a": 3.0,
+                "odd_b": 2.4,
+                "draw": 3.15
+            }
+        }
+    },
+    {
+        "combination": "bet365 (Bragantino) - DraftKings (Internacional) - betclic (Draw)",
+        "implied_probability": 0.6986554845580404,
+        "odds": [
+            3.2,
+            15.0,
+            3.13
+        ],
+        "date": "25-09-2024",
+        "teams": [
+            "Bragantino",
+            "Internacional"
+        ],
+        "expected_return": 30.13445154419596,
+        "average_odds": 5.810617283950617,
+        "volatility": 6.090728277435333,
+        "house_odds": {
+            "bet365": {
+                "odd_a": 3.2,
+                "odd_b": 2.25,
+                "draw": 3.3
+            },
+            "DraftKings": {
+                "odd_a": 19.0,
+                "odd_b": 15.0,
+                "draw": 1.0555555555555556
+            },
+            "betclic": {
+                "odd_a": 3.05,
+                "odd_b": 2.31,
+                "draw": 3.13
+            }
+        }
+    },
+    {
+        "combination": "bet365 (Bragantino) - Bovada (Internacional) - unibet (Draw)",
+        "implied_probability": 0.7132936507936507,
+        "odds": [
+            3.2,
+            12.0,
+            3.15
+        ],
+        "date": "25-09-2024",
+        "teams": [
+            "Bragantino",
+            "Internacional"
+        ],
+        "expected_return": 28.67063492063493,
+        "average_odds": 4.92962962962963,
+        "volatility": 4.388134800039717,
+        "house_odds": {
+            "bet365": {
+                "odd_a": 3.2,
+                "odd_b": 2.25,
+                "draw": 3.3
+            },
+            "Bovada": {
+                "odd_a": 14.0,
+                "odd_b": 12.0,
+                "draw": 1.0666666666666667
+            },
+            "unibet": {
+                "odd_a": 3.0,
+                "odd_b": 2.4,
+                "draw": 3.15
+            }
+        }
+    },
+    {
+        "combination": "bet365 (Bragantino) - Bovada (Internacional) - betclic (Draw)",
+        "implied_probability": 0.7153221512247071,
+        "odds": [
+            3.2,
+            12.0,
+            3.13
+        ],
+        "date": "25-09-2024",
+        "teams": [
+            "Bragantino",
+            "Internacional"
+        ],
+        "expected_return": 28.46778487752929,
+        "average_odds": 4.922962962962964,
+        "volatility": 4.392489787067519,
+        "house_odds": {
+            "bet365": {
+                "odd_a": 3.2,
+                "odd_b": 2.25,
+                "draw": 3.3
+            },
+            "Bovada": {
+                "odd_a": 14.0,
+                "odd_b": 12.0,
+                "draw": 1.0666666666666667
+            },
+            "betclic": {
+                "odd_a": 3.05,
+                "odd_b": 2.31,
+                "draw": 3.13
+            }
+        }
+    },
+    {
+        "combination": "betclic (Bragantino) - FanDuel (Internacional) - unibet (Draw)",
+        "implied_probability": 0.7473699862458645,
+        "odds": [
+            3.05,
+            9.8,
+            3.15
+        ],
+        "date": "25-09-2024",
+        "teams": [
+            "Bragantino",
+            "Internacional"
+        ],
+        "expected_return": 25.263001375413552,
+        "average_odds": 4.547037037037037,
+        "volatility": 3.7896305707582885,
+        "house_odds": {
+            "betclic": {
+                "odd_a": 3.05,
+                "odd_b": 2.31,
+                "draw": 3.13
+            },
+            "FanDuel": {
+                "odd_a": 13.0,
+                "odd_b": 9.8,
+                "draw": 1.0833333333333333
+            },
+            "unibet": {
+                "odd_a": 3.0,
+                "odd_b": 2.4,
+                "draw": 3.15
+            }
+        }
+    },
+    {
+        "combination": "betclic (Bragantino) - FanDuel (Internacional) - bet365 (Draw)",
+        "implied_probability": 0.73293997181585,
+        "odds": [
+            3.05,
+            9.8,
+            3.3
+        ],
+        "date": "25-09-2024",
+        "teams": [
+            "Bragantino",
+            "Internacional"
+        ],
+        "expected_return": 26.706002818414998,
+        "average_odds": 4.569259259259259,
+        "volatility": 3.7850354395254544,
+        "house_odds": {
+            "betclic": {
+                "odd_a": 3.05,
+                "odd_b": 2.31,
+                "draw": 3.13
+            },
+            "FanDuel": {
+                "odd_a": 13.0,
+                "odd_b": 9.8,
+                "draw": 1.0833333333333333
+            },
+            "bet365": {
+                "odd_a": 3.2,
+                "odd_b": 2.25,
+                "draw": 3.3
+            }
+        }
+    },
+    {
+        "combination": "betclic (Bragantino) - DraftKings (Internacional) - unibet (Draw)",
+        "implied_probability": 0.7119958365860005,
+        "odds": [
+            3.05,
+            15.0,
+            3.15
+        ],
+        "date": "25-09-2024",
+        "teams": [
+            "Bragantino",
+            "Internacional"
+        ],
+        "expected_return": 28.80041634139995,
+        "average_odds": 5.788395061728394,
+        "volatility": 6.098110281199953,
+        "house_odds": {
+            "betclic": {
+                "odd_a": 3.05,
+                "odd_b": 2.31,
+                "draw": 3.13
+            },
+            "DraftKings": {
+                "odd_a": 19.0,
+                "odd_b": 15.0,
+                "draw": 1.0555555555555556
+            },
+            "unibet": {
+                "odd_a": 3.0,
+                "odd_b": 2.4,
+                "draw": 3.15
+            }
+        }
+    },
+    {
+        "combination": "betclic (Bragantino) - DraftKings (Internacional) - bet365 (Draw)",
+        "implied_probability": 0.6975658221559862,
+        "odds": [
+            3.05,
+            15.0,
+            3.3
+        ],
+        "date": "25-09-2024",
+        "teams": [
+            "Bragantino",
+            "Internacional"
+        ],
+        "expected_return": 30.243417784401384,
+        "average_odds": 5.8106172839506165,
+        "volatility": 6.090728277435332,
+        "house_odds": {
+            "betclic": {
+                "odd_a": 3.05,
+                "odd_b": 2.31,
+                "draw": 3.13
+            },
+            "DraftKings": {
+                "odd_a": 19.0,
+                "odd_b": 15.0,
+                "draw": 1.0555555555555556
+            },
+            "bet365": {
+                "odd_a": 3.2,
+                "odd_b": 2.25,
+                "draw": 3.3
+            }
+        }
+    },
+    {
+        "combination": "betclic (Bragantino) - Bovada (Internacional) - unibet (Draw)",
+        "implied_probability": 0.7286625032526672,
+        "odds": [
+            3.05,
+            12.0,
+            3.15
+        ],
+        "date": "25-09-2024",
+        "teams": [
+            "Bragantino",
+            "Internacional"
+        ],
+        "expected_return": 27.133749674733277,
+        "average_odds": 4.900740740740741,
+        "volatility": 4.398237519559812,
+        "house_odds": {
+            "betclic": {
+                "odd_a": 3.05,
+                "odd_b": 2.31,
+                "draw": 3.13
+            },
+            "Bovada": {
+                "odd_a": 14.0,
+                "odd_b": 12.0,
+                "draw": 1.0666666666666667
+            },
+            "unibet": {
+                "odd_a": 3.0,
+                "odd_b": 2.4,
+                "draw": 3.15
+            }
+        }
+    },
+    {
+        "combination": "betclic (Bragantino) - Bovada (Internacional) - bet365 (Draw)",
+        "implied_probability": 0.7142324888226528,
+        "odds": [
+            3.05,
+            12.0,
+            3.3
+        ],
+        "date": "25-09-2024",
+        "teams": [
+            "Bragantino",
+            "Internacional"
+        ],
+        "expected_return": 28.576751117734723,
+        "average_odds": 4.922962962962963,
+        "volatility": 4.392489787067519,
+        "house_odds": {
+            "betclic": {
+                "odd_a": 3.05,
+                "odd_b": 2.31,
+                "draw": 3.13
+            },
+            "Bovada": {
+                "odd_a": 14.0,
+                "odd_b": 12.0,
+                "draw": 1.0666666666666667
+            },
+            "bet365": {
+                "odd_a": 3.2,
+                "odd_b": 2.25,
+                "draw": 3.3
+            }
+        }
+    },
+    {
+        "combination": "FanDuel (Bragantino) - unibet (Internacional) - bet365 (Draw)",
+        "implied_probability": 0.7966200466200466,
+        "odds": [
+            13.0,
+            2.4,
+            3.3
+        ],
+        "date": "25-09-2024",
+        "teams": [
+            "Bragantino",
+            "Internacional"
+        ],
+        "expected_return": 20.33799533799534,
+        "average_odds": 4.575925925925926,
+        "volatility": 3.7806044254422506,
+        "house_odds": {
+            "FanDuel": {
+                "odd_a": 13.0,
+                "odd_b": 9.8,
+                "draw": 1.0833333333333333
+            },
+            "unibet": {
+                "odd_a": 3.0,
+                "odd_b": 2.4,
+                "draw": 3.15
+            },
+            "bet365": {
+                "odd_a": 3.2,
+                "odd_b": 2.25,
+                "draw": 3.3
+            }
+        }
+    },
+    {
+        "combination": "FanDuel (Bragantino) - unibet (Internacional) - betclic (Draw)",
+        "implied_probability": 0.8130785614811173,
+        "odds": [
+            13.0,
+            2.4,
+            3.13
+        ],
+        "date": "25-09-2024",
+        "teams": [
+            "Bragantino",
+            "Internacional"
+        ],
+        "expected_return": 18.692143851888265,
+        "average_odds": 4.547037037037037,
+        "volatility": 3.789630570758289,
+        "house_odds": {
+            "FanDuel": {
+                "odd_a": 13.0,
+                "odd_b": 9.8,
+                "draw": 1.0833333333333333
+            },
+            "unibet": {
+                "odd_a": 3.0,
+                "odd_b": 2.4,
+                "draw": 3.15
+            },
+            "betclic": {
+                "odd_a": 3.05,
+                "odd_b": 2.31,
+                "draw": 3.13
+            }
+        }
+    },
+    {
+        "combination": "FanDuel (Bragantino) - bet365 (Internacional) - unibet (Draw)",
+        "implied_probability": 0.8388278388278387,
+        "odds": [
+            13.0,
+            2.25,
+            3.15
+        ],
+        "date": "25-09-2024",
+        "teams": [
+            "Bragantino",
+            "Internacional"
+        ],
+        "expected_return": 16.117216117216127,
+        "average_odds": 4.575925925925926,
+        "volatility": 3.78060442544225,
+        "house_odds": {
+            "FanDuel": {
+                "odd_a": 13.0,
+                "odd_b": 9.8,
+                "draw": 1.0833333333333333
+            },
+            "bet365": {
+                "odd_a": 3.2,
+                "odd_b": 2.25,
+                "draw": 3.3
+            },
+            "unibet": {
+                "odd_a": 3.0,
+                "odd_b": 2.4,
+                "draw": 3.15
+            }
+        }
+    },
+    {
+        "combination": "FanDuel (Bragantino) - bet365 (Internacional) - betclic (Draw)",
+        "implied_probability": 0.840856339258895,
+        "odds": [
+            13.0,
+            2.25,
+            3.13
+        ],
+        "date": "25-09-2024",
+        "teams": [
+            "Bragantino",
+            "Internacional"
+        ],
+        "expected_return": 15.914366074110497,
+        "average_odds": 4.569259259259259,
+        "volatility": 3.7850354395254544,
+        "house_odds": {
+            "FanDuel": {
+                "odd_a": 13.0,
+                "odd_b": 9.8,
+                "draw": 1.0833333333333333
+            },
+            "bet365": {
+                "odd_a": 3.2,
+                "odd_b": 2.25,
+                "draw": 3.3
+            },
+            "betclic": {
+                "odd_a": 3.05,
+                "odd_b": 2.31,
+                "draw": 3.13
+            }
+        }
+    },
+    {
+        "combination": "FanDuel (Bragantino) - betclic (Internacional) - unibet (Draw)",
+        "implied_probability": 0.8272838272838272,
+        "odds": [
+            13.0,
+            2.31,
+            3.15
+        ],
+        "date": "25-09-2024",
+        "teams": [
+            "Bragantino",
+            "Internacional"
+        ],
+        "expected_return": 17.27161727161728,
+        "average_odds": 4.547037037037037,
+        "volatility": 3.7896305707582885,
+        "house_odds": {
+            "FanDuel": {
+                "odd_a": 13.0,
+                "odd_b": 9.8,
+                "draw": 1.0833333333333333
+            },
+            "betclic": {
+                "odd_a": 3.05,
+                "odd_b": 2.31,
+                "draw": 3.13
+            },
+            "unibet": {
+                "odd_a": 3.0,
+                "odd_b": 2.4,
+                "draw": 3.15
+            }
+        }
+    },
+    {
+        "combination": "FanDuel (Bragantino) - betclic (Internacional) - bet365 (Draw)",
+        "implied_probability": 0.8128538128538128,
+        "odds": [
+            13.0,
+            2.31,
+            3.3
+        ],
+        "date": "25-09-2024",
+        "teams": [
+            "Bragantino",
+            "Internacional"
+        ],
+        "expected_return": 18.714618714618723,
+        "average_odds": 4.569259259259259,
+        "volatility": 3.7850354395254544,
+        "house_odds": {
+            "FanDuel": {
+                "odd_a": 13.0,
+                "odd_b": 9.8,
+                "draw": 1.0833333333333333
+            },
+            "betclic": {
+                "odd_a": 3.05,
+                "odd_b": 2.31,
+                "draw": 3.13
+            },
+            "bet365": {
+                "odd_a": 3.2,
+                "odd_b": 2.25,
+                "draw": 3.3
+            }
+        }
+    },
+    {
+        "combination": "FanDuel (Bragantino) - DraftKings (Internacional) - unibet (Draw)",
+        "implied_probability": 0.461050061050061,
+        "odds": [
+            13.0,
+            15.0,
+            3.15
+        ],
+        "date": "25-09-2024",
+        "teams": [
+            "Bragantino",
+            "Internacional"
+        ],
+        "expected_return": 53.8949938949939,
+        "average_odds": 7.498765432098766,
+        "volatility": 6.428469332164547,
+        "house_odds": {
+            "FanDuel": {
+                "odd_a": 13.0,
+                "odd_b": 9.8,
+                "draw": 1.0833333333333333
+            },
+            "DraftKings": {
+                "odd_a": 19.0,
+                "odd_b": 15.0,
+                "draw": 1.0555555555555556
+            },
+            "unibet": {
+                "odd_a": 3.0,
+                "odd_b": 2.4,
+                "draw": 3.15
+            }
+        }
+    },
+    {
+        "combination": "FanDuel (Bragantino) - DraftKings (Internacional) - bet365 (Draw)",
+        "implied_probability": 0.4466200466200466,
+        "odds": [
+            13.0,
+            15.0,
+            3.3
+        ],
+        "date": "25-09-2024",
+        "teams": [
+            "Bragantino",
+            "Internacional"
+        ],
+        "expected_return": 55.33799533799534,
+        "average_odds": 7.520987654320987,
+        "volatility": 6.4155454516002415,
+        "house_odds": {
+            "FanDuel": {
+                "odd_a": 13.0,
+                "odd_b": 9.8,
+                "draw": 1.0833333333333333
+            },
+            "DraftKings": {
+                "odd_a": 19.0,
+                "odd_b": 15.0,
+                "draw": 1.0555555555555556
+            },
+            "bet365": {
+                "odd_a": 3.2,
+                "odd_b": 2.25,
+                "draw": 3.3
+            }
+        }
+    },
+    {
+        "combination": "FanDuel (Bragantino) - DraftKings (Internacional) - betclic (Draw)",
+        "implied_probability": 0.46307856148111737,
+        "odds": [
+            13.0,
+            15.0,
+            3.13
+        ],
+        "date": "25-09-2024",
+        "teams": [
+            "Bragantino",
+            "Internacional"
+        ],
+        "expected_return": 53.69214385188826,
+        "average_odds": 7.492098765432098,
+        "volatility": 6.4341054238165745,
+        "house_odds": {
+            "FanDuel": {
+                "odd_a": 13.0,
+                "odd_b": 9.8,
+                "draw": 1.0833333333333333
+            },
+            "DraftKings": {
+                "odd_a": 19.0,
+                "odd_b": 15.0,
+                "draw": 1.0555555555555556
+            },
+            "betclic": {
+                "odd_a": 3.05,
+                "odd_b": 2.31,
+                "draw": 3.13
+            }
+        }
+    },
+    {
+        "combination": "FanDuel (Bragantino) - Bovada (Internacional) - unibet (Draw)",
+        "implied_probability": 0.4777167277167277,
+        "odds": [
+            13.0,
+            12.0,
+            3.15
+        ],
+        "date": "25-09-2024",
+        "teams": [
+            "Bragantino",
+            "Internacional"
+        ],
+        "expected_return": 52.22832722832723,
+        "average_odds": 6.611111111111111,
+        "volatility": 5.14967936194713,
+        "house_odds": {
+            "FanDuel": {
+                "odd_a": 13.0,
+                "odd_b": 9.8,
+                "draw": 1.0833333333333333
+            },
+            "Bovada": {
+                "odd_a": 14.0,
+                "odd_b": 12.0,
+                "draw": 1.0666666666666667
+            },
+            "unibet": {
+                "odd_a": 3.0,
+                "odd_b": 2.4,
+                "draw": 3.15
+            }
+        }
+    },
+    {
+        "combination": "FanDuel (Bragantino) - Bovada (Internacional) - bet365 (Draw)",
+        "implied_probability": 0.4632867132867133,
+        "odds": [
+            13.0,
+            12.0,
+            3.3
+        ],
+        "date": "25-09-2024",
+        "teams": [
+            "Bragantino",
+            "Internacional"
+        ],
+        "expected_return": 53.671328671328666,
+        "average_odds": 6.633333333333334,
+        "volatility": 5.137378156315501,
+        "house_odds": {
+            "FanDuel": {
+                "odd_a": 13.0,
+                "odd_b": 9.8,
+                "draw": 1.0833333333333333
+            },
+            "Bovada": {
+                "odd_a": 14.0,
+                "odd_b": 12.0,
+                "draw": 1.0666666666666667
+            },
+            "bet365": {
+                "odd_a": 3.2,
+                "odd_b": 2.25,
+                "draw": 3.3
+            }
+        }
+    },
+    {
+        "combination": "FanDuel (Bragantino) - Bovada (Internacional) - betclic (Draw)",
+        "implied_probability": 0.47974522814778403,
+        "odds": [
+            13.0,
+            12.0,
+            3.13
+        ],
+        "date": "25-09-2024",
+        "teams": [
+            "Bragantino",
+            "Internacional"
+        ],
+        "expected_return": 52.02547718522159,
+        "average_odds": 6.604444444444445,
+        "volatility": 5.15556561301701,
+        "house_odds": {
+            "FanDuel": {
+                "odd_a": 13.0,
+                "odd_b": 9.8,
+                "draw": 1.0833333333333333
+            },
+            "Bovada": {
+                "odd_a": 14.0,
+                "odd_b": 12.0,
+                "draw": 1.0666666666666667
+            },
+            "betclic": {
+                "odd_a": 3.05,
+                "odd_b": 2.31,
+                "draw": 3.13
+            }
+        }
+    },
+    {
+        "combination": "DraftKings (Bragantino) - unibet (Internacional) - bet365 (Draw)",
+        "implied_probability": 0.7723285486443381,
+        "odds": [
+            19.0,
+            2.4,
+            3.3
+        ],
+        "date": "25-09-2024",
+        "teams": [
+            "Bragantino",
+            "Internacional"
+        ],
+        "expected_return": 22.767145135566192,
+        "average_odds": 5.817283950617284,
+        "volatility": 6.086616141373713,
+        "house_odds": {
+            "DraftKings": {
+                "odd_a": 19.0,
+                "odd_b": 15.0,
+                "draw": 1.0555555555555556
+            },
+            "unibet": {
+                "odd_a": 3.0,
+                "odd_b": 2.4,
+                "draw": 3.15
+            },
+            "bet365": {
+                "odd_a": 3.2,
+                "odd_b": 2.25,
+                "draw": 3.3
+            }
+        }
+    },
+    {
+        "combination": "DraftKings (Bragantino) - unibet (Internacional) - betclic (Draw)",
+        "implied_probability": 0.7887870635054088,
+        "odds": [
+            19.0,
+            2.4,
+            3.13
+        ],
+        "date": "25-09-2024",
+        "teams": [
+            "Bragantino",
+            "Internacional"
+        ],
+        "expected_return": 21.121293649459115,
+        "average_odds": 5.788395061728395,
+        "volatility": 6.098110281199953,
+        "house_odds": {
+            "DraftKings": {
+                "odd_a": 19.0,
+                "odd_b": 15.0,
+                "draw": 1.0555555555555556
+            },
+            "unibet": {
+                "odd_a": 3.0,
+                "odd_b": 2.4,
+                "draw": 3.15
+            },
+            "betclic": {
+                "odd_a": 3.05,
+                "odd_b": 2.31,
+                "draw": 3.13
+            }
+        }
+    },
+    {
+        "combination": "DraftKings (Bragantino) - bet365 (Internacional) - unibet (Draw)",
+        "implied_probability": 0.8145363408521302,
+        "odds": [
+            19.0,
+            2.25,
+            3.15
+        ],
+        "date": "25-09-2024",
+        "teams": [
+            "Bragantino",
+            "Internacional"
+        ],
+        "expected_return": 18.54636591478698,
+        "average_odds": 5.817283950617284,
+        "volatility": 6.086616141373713,
+        "house_odds": {
+            "DraftKings": {
+                "odd_a": 19.0,
+                "odd_b": 15.0,
+                "draw": 1.0555555555555556
+            },
+            "bet365": {
+                "odd_a": 3.2,
+                "odd_b": 2.25,
+                "draw": 3.3
+            },
+            "unibet": {
+                "odd_a": 3.0,
+                "odd_b": 2.4,
+                "draw": 3.15
+            }
+        }
+    },
+    {
+        "combination": "DraftKings (Bragantino) - bet365 (Internacional) - betclic (Draw)",
+        "implied_probability": 0.8165648412831866,
+        "odds": [
+            19.0,
+            2.25,
+            3.13
+        ],
+        "date": "25-09-2024",
+        "teams": [
+            "Bragantino",
+            "Internacional"
+        ],
+        "expected_return": 18.343515871681337,
+        "average_odds": 5.810617283950617,
+        "volatility": 6.090728277435333,
+        "house_odds": {
+            "DraftKings": {
+                "odd_a": 19.0,
+                "odd_b": 15.0,
+                "draw": 1.0555555555555556
+            },
+            "bet365": {
+                "odd_a": 3.2,
+                "odd_b": 2.25,
+                "draw": 3.3
+            },
+            "betclic": {
+                "odd_a": 3.05,
+                "odd_b": 2.31,
+                "draw": 3.13
+            }
+        }
+    },
+    {
+        "combination": "DraftKings (Bragantino) - betclic (Internacional) - unibet (Draw)",
+        "implied_probability": 0.8029923293081187,
+        "odds": [
+            19.0,
+            2.31,
+            3.15
+        ],
+        "date": "25-09-2024",
+        "teams": [
+            "Bragantino",
+            "Internacional"
+        ],
+        "expected_return": 19.70076706918813,
+        "average_odds": 5.788395061728395,
+        "volatility": 6.098110281199953,
+        "house_odds": {
+            "DraftKings": {
+                "odd_a": 19.0,
+                "odd_b": 15.0,
+                "draw": 1.0555555555555556
+            },
+            "betclic": {
+                "odd_a": 3.05,
+                "odd_b": 2.31,
+                "draw": 3.13
+            },
+            "unibet": {
+                "odd_a": 3.0,
+                "odd_b": 2.4,
+                "draw": 3.15
+            }
+        }
+    },
+    {
+        "combination": "DraftKings (Bragantino) - betclic (Internacional) - bet365 (Draw)",
+        "implied_probability": 0.7885623148781044,
+        "odds": [
+            19.0,
+            2.31,
+            3.3
+        ],
+        "date": "25-09-2024",
+        "teams": [
+            "Bragantino",
+            "Internacional"
+        ],
+        "expected_return": 21.143768512189563,
+        "average_odds": 5.810617283950617,
+        "volatility": 6.090728277435333,
+        "house_odds": {
+            "DraftKings": {
+                "odd_a": 19.0,
+                "odd_b": 15.0,
+                "draw": 1.0555555555555556
+            },
+            "betclic": {
+                "odd_a": 3.05,
+                "odd_b": 2.31,
+                "draw": 3.13
+            },
+            "bet365": {
+                "odd_a": 3.2,
+                "odd_b": 2.25,
+                "draw": 3.3
+            }
+        }
+    },
+    {
+        "combination": "DraftKings (Bragantino) - FanDuel (Internacional) - unibet (Draw)",
+        "implied_probability": 0.4721327127342165,
+        "odds": [
+            19.0,
+            9.8,
+            3.15
+        ],
+        "date": "25-09-2024",
+        "teams": [
+            "Bragantino",
+            "Internacional"
+        ],
+        "expected_return": 52.786728726578346,
+        "average_odds": 7.498765432098766,
+        "volatility": 6.428469332164547,
+        "house_odds": {
+            "DraftKings": {
+                "odd_a": 19.0,
+                "odd_b": 15.0,
+                "draw": 1.0555555555555556
+            },
+            "FanDuel": {
+                "odd_a": 13.0,
+                "odd_b": 9.8,
+                "draw": 1.0833333333333333
+            },
+            "unibet": {
+                "odd_a": 3.0,
+                "odd_b": 2.4,
+                "draw": 3.15
+            }
+        }
+    },
+    {
+        "combination": "DraftKings (Bragantino) - FanDuel (Internacional) - bet365 (Draw)",
+        "implied_probability": 0.45770269830420207,
+        "odds": [
+            19.0,
+            9.8,
+            3.3
+        ],
+        "date": "25-09-2024",
+        "teams": [
+            "Bragantino",
+            "Internacional"
+        ],
+        "expected_return": 54.229730169579796,
+        "average_odds": 7.520987654320987,
+        "volatility": 6.4155454516002415,
+        "house_odds": {
+            "DraftKings": {
+                "odd_a": 19.0,
+                "odd_b": 15.0,
+                "draw": 1.0555555555555556
+            },
+            "FanDuel": {
+                "odd_a": 13.0,
+                "odd_b": 9.8,
+                "draw": 1.0833333333333333
+            },
+            "bet365": {
+                "odd_a": 3.2,
+                "odd_b": 2.25,
+                "draw": 3.3
+            }
+        }
+    },
+    {
+        "combination": "DraftKings (Bragantino) - FanDuel (Internacional) - betclic (Draw)",
+        "implied_probability": 0.4741612131652728,
+        "odds": [
+            19.0,
+            9.8,
+            3.13
+        ],
+        "date": "25-09-2024",
+        "teams": [
+            "Bragantino",
+            "Internacional"
+        ],
+        "expected_return": 52.58387868347272,
+        "average_odds": 7.492098765432098,
+        "volatility": 6.4341054238165745,
+        "house_odds": {
+            "DraftKings": {
+                "odd_a": 19.0,
+                "odd_b": 15.0,
+                "draw": 1.0555555555555556
+            },
+            "FanDuel": {
+                "odd_a": 13.0,
+                "odd_b": 9.8,
+                "draw": 1.0833333333333333
+            },
+            "betclic": {
+                "odd_a": 3.05,
+                "odd_b": 2.31,
+                "draw": 3.13
+            }
+        }
+    },
+    {
+        "combination": "DraftKings (Bragantino) - Bovada (Internacional) - unibet (Draw)",
+        "implied_probability": 0.4534252297410192,
+        "odds": [
+            19.0,
+            12.0,
+            3.15
+        ],
+        "date": "25-09-2024",
+        "teams": [
+            "Bragantino",
+            "Internacional"
+        ],
+        "expected_return": 54.65747702589808,
+        "average_odds": 7.852469135802472,
+        "volatility": 6.649837354319014,
+        "house_odds": {
+            "DraftKings": {
+                "odd_a": 19.0,
+                "odd_b": 15.0,
+                "draw": 1.0555555555555556
+            },
+            "Bovada": {
+                "odd_a": 14.0,
+                "odd_b": 12.0,
+                "draw": 1.0666666666666667
+            },
+            "unibet": {
+                "odd_a": 3.0,
+                "odd_b": 2.4,
+                "draw": 3.15
+            }
+        }
+    },
+    {
+        "combination": "DraftKings (Bragantino) - Bovada (Internacional) - bet365 (Draw)",
+        "implied_probability": 0.43899521531100477,
+        "odds": [
+            19.0,
+            12.0,
+            3.3
+        ],
+        "date": "25-09-2024",
+        "teams": [
+            "Bragantino",
+            "Internacional"
+        ],
+        "expected_return": 56.10047846889952,
+        "average_odds": 7.874691358024691,
+        "volatility": 6.636160197076009,
+        "house_odds": {
+            "DraftKings": {
+                "odd_a": 19.0,
+                "odd_b": 15.0,
+                "draw": 1.0555555555555556
+            },
+            "Bovada": {
+                "odd_a": 14.0,
+                "odd_b": 12.0,
+                "draw": 1.0666666666666667
+            },
+            "bet365": {
+                "odd_a": 3.2,
+                "odd_b": 2.25,
+                "draw": 3.3
+            }
+        }
+    },
+    {
+        "combination": "DraftKings (Bragantino) - Bovada (Internacional) - betclic (Draw)",
+        "implied_probability": 0.4554537301720755,
+        "odds": [
+            19.0,
+            12.0,
+            3.13
+        ],
+        "date": "25-09-2024",
+        "teams": [
+            "Bragantino",
+            "Internacional"
+        ],
+        "expected_return": 54.45462698279244,
+        "average_odds": 7.845802469135803,
+        "volatility": 6.655640280129703,
+        "house_odds": {
+            "DraftKings": {
+                "odd_a": 19.0,
+                "odd_b": 15.0,
+                "draw": 1.0555555555555556
+            },
+            "Bovada": {
+                "odd_a": 14.0,
+                "odd_b": 12.0,
+                "draw": 1.0666666666666667
+            },
+            "betclic": {
+                "odd_a": 3.05,
+                "odd_b": 2.31,
+                "draw": 3.13
+            }
+        }
+    },
+    {
+        "combination": "Bovada (Bragantino) - unibet (Internacional) - bet365 (Draw)",
+        "implied_probability": 0.7911255411255411,
+        "odds": [
+            14.0,
+            2.4,
+            3.3
+        ],
+        "date": "25-09-2024",
+        "teams": [
+            "Bragantino",
+            "Internacional"
+        ],
+        "expected_return": 20.88744588744589,
+        "average_odds": 4.92962962962963,
+        "volatility": 4.388134800039717,
+        "house_odds": {
+            "Bovada": {
+                "odd_a": 14.0,
+                "odd_b": 12.0,
+                "draw": 1.0666666666666667
+            },
+            "unibet": {
+                "odd_a": 3.0,
+                "odd_b": 2.4,
+                "draw": 3.15
+            },
+            "bet365": {
+                "odd_a": 3.2,
+                "odd_b": 2.25,
+                "draw": 3.3
+            }
+        }
+    },
+    {
+        "combination": "Bovada (Bragantino) - unibet (Internacional) - betclic (Draw)",
+        "implied_probability": 0.8075840559866119,
+        "odds": [
+            14.0,
+            2.4,
+            3.13
+        ],
+        "date": "25-09-2024",
+        "teams": [
+            "Bragantino",
+            "Internacional"
+        ],
+        "expected_return": 19.241594401338812,
+        "average_odds": 4.900740740740741,
+        "volatility": 4.398237519559812,
+        "house_odds": {
+            "Bovada": {
+                "odd_a": 14.0,
+                "odd_b": 12.0,
+                "draw": 1.0666666666666667
+            },
+            "unibet": {
+                "odd_a": 3.0,
+                "odd_b": 2.4,
+                "draw": 3.15
+            },
+            "betclic": {
+                "odd_a": 3.05,
+                "odd_b": 2.31,
+                "draw": 3.13
+            }
+        }
+    },
+    {
+        "combination": "Bovada (Bragantino) - bet365 (Internacional) - unibet (Draw)",
+        "implied_probability": 0.8333333333333333,
+        "odds": [
+            14.0,
+            2.25,
+            3.15
+        ],
+        "date": "25-09-2024",
+        "teams": [
+            "Bragantino",
+            "Internacional"
+        ],
+        "expected_return": 16.666666666666675,
+        "average_odds": 4.929629629629629,
+        "volatility": 4.388134800039718,
+        "house_odds": {
+            "Bovada": {
+                "odd_a": 14.0,
+                "odd_b": 12.0,
+                "draw": 1.0666666666666667
+            },
+            "bet365": {
+                "odd_a": 3.2,
+                "odd_b": 2.25,
+                "draw": 3.3
+            },
+            "unibet": {
+                "odd_a": 3.0,
+                "odd_b": 2.4,
+                "draw": 3.15
+            }
+        }
+    },
+    {
+        "combination": "Bovada (Bragantino) - bet365 (Internacional) - betclic (Draw)",
+        "implied_probability": 0.8353618337643895,
+        "odds": [
+            14.0,
+            2.25,
+            3.13
+        ],
+        "date": "25-09-2024",
+        "teams": [
+            "Bragantino",
+            "Internacional"
+        ],
+        "expected_return": 16.463816623561044,
+        "average_odds": 4.922962962962963,
+        "volatility": 4.392489787067519,
+        "house_odds": {
+            "Bovada": {
+                "odd_a": 14.0,
+                "odd_b": 12.0,
+                "draw": 1.0666666666666667
+            },
+            "bet365": {
+                "odd_a": 3.2,
+                "odd_b": 2.25,
+                "draw": 3.3
+            },
+            "betclic": {
+                "odd_a": 3.05,
+                "odd_b": 2.31,
+                "draw": 3.13
+            }
+        }
+    },
+    {
+        "combination": "Bovada (Bragantino) - betclic (Internacional) - unibet (Draw)",
+        "implied_probability": 0.8217893217893217,
+        "odds": [
+            14.0,
+            2.31,
+            3.15
+        ],
+        "date": "25-09-2024",
+        "teams": [
+            "Bragantino",
+            "Internacional"
+        ],
+        "expected_return": 17.821067821067828,
+        "average_odds": 4.900740740740741,
+        "volatility": 4.398237519559812,
+        "house_odds": {
+            "Bovada": {
+                "odd_a": 14.0,
+                "odd_b": 12.0,
+                "draw": 1.0666666666666667
+            },
+            "betclic": {
+                "odd_a": 3.05,
+                "odd_b": 2.31,
+                "draw": 3.13
+            },
+            "unibet": {
+                "odd_a": 3.0,
+                "odd_b": 2.4,
+                "draw": 3.15
+            }
+        }
+    },
+    {
+        "combination": "Bovada (Bragantino) - betclic (Internacional) - bet365 (Draw)",
+        "implied_probability": 0.8073593073593073,
+        "odds": [
+            14.0,
+            2.31,
+            3.3
+        ],
+        "date": "25-09-2024",
+        "teams": [
+            "Bragantino",
+            "Internacional"
+        ],
+        "expected_return": 19.26406926406927,
+        "average_odds": 4.922962962962964,
+        "volatility": 4.392489787067519,
+        "house_odds": {
+            "Bovada": {
+                "odd_a": 14.0,
+                "odd_b": 12.0,
+                "draw": 1.0666666666666667
+            },
+            "betclic": {
+                "odd_a": 3.05,
+                "odd_b": 2.31,
+                "draw": 3.13
+            },
+            "bet365": {
+                "odd_a": 3.2,
+                "odd_b": 2.25,
+                "draw": 3.3
+            }
+        }
+    },
+    {
+        "combination": "Bovada (Bragantino) - FanDuel (Internacional) - unibet (Draw)",
+        "implied_probability": 0.49092970521541945,
+        "odds": [
+            14.0,
+            9.8,
+            3.15
+        ],
+        "date": "25-09-2024",
+        "teams": [
+            "Bragantino",
+            "Internacional"
+        ],
+        "expected_return": 50.90702947845806,
+        "average_odds": 6.611111111111111,
+        "volatility": 5.14967936194713,
+        "house_odds": {
+            "Bovada": {
+                "odd_a": 14.0,
+                "odd_b": 12.0,
+                "draw": 1.0666666666666667
+            },
+            "FanDuel": {
+                "odd_a": 13.0,
+                "odd_b": 9.8,
+                "draw": 1.0833333333333333
+            },
+            "unibet": {
+                "odd_a": 3.0,
+                "odd_b": 2.4,
+                "draw": 3.15
+            }
+        }
+    },
+    {
+        "combination": "Bovada (Bragantino) - FanDuel (Internacional) - bet365 (Draw)",
+        "implied_probability": 0.47649969078540505,
+        "odds": [
+            14.0,
+            9.8,
+            3.3
+        ],
+        "date": "25-09-2024",
+        "teams": [
+            "Bragantino",
+            "Internacional"
+        ],
+        "expected_return": 52.35003092145949,
+        "average_odds": 6.633333333333333,
+        "volatility": 5.137378156315501,
+        "house_odds": {
+            "Bovada": {
+                "odd_a": 14.0,
+                "odd_b": 12.0,
+                "draw": 1.0666666666666667
+            },
+            "FanDuel": {
+                "odd_a": 13.0,
+                "odd_b": 9.8,
+                "draw": 1.0833333333333333
+            },
+            "bet365": {
+                "odd_a": 3.2,
+                "odd_b": 2.25,
+                "draw": 3.3
+            }
+        }
+    },
+    {
+        "combination": "Bovada (Bragantino) - FanDuel (Internacional) - betclic (Draw)",
+        "implied_probability": 0.4929582056464758,
+        "odds": [
+            14.0,
+            9.8,
+            3.13
+        ],
+        "date": "25-09-2024",
+        "teams": [
+            "Bragantino",
+            "Internacional"
+        ],
+        "expected_return": 50.704179435352415,
+        "average_odds": 6.604444444444444,
+        "volatility": 5.15556561301701,
+        "house_odds": {
+            "Bovada": {
+                "odd_a": 14.0,
+                "odd_b": 12.0,
+                "draw": 1.0666666666666667
+            },
+            "FanDuel": {
+                "odd_a": 13.0,
+                "odd_b": 9.8,
+                "draw": 1.0833333333333333
+            },
+            "betclic": {
+                "odd_a": 3.05,
+                "odd_b": 2.31,
+                "draw": 3.13
+            }
+        }
+    },
+    {
+        "combination": "Bovada (Bragantino) - DraftKings (Internacional) - unibet (Draw)",
+        "implied_probability": 0.45555555555555555,
+        "odds": [
+            14.0,
+            15.0,
+            3.15
+        ],
+        "date": "25-09-2024",
+        "teams": [
+            "Bragantino",
+            "Internacional"
+        ],
+        "expected_return": 54.44444444444445,
+        "average_odds": 7.85246913580247,
+        "volatility": 6.649837354319014,
+        "house_odds": {
+            "Bovada": {
+                "odd_a": 14.0,
+                "odd_b": 12.0,
+                "draw": 1.0666666666666667
+            },
+            "DraftKings": {
+                "odd_a": 19.0,
+                "odd_b": 15.0,
+                "draw": 1.0555555555555556
+            },
+            "unibet": {
+                "odd_a": 3.0,
+                "odd_b": 2.4,
+                "draw": 3.15
+            }
+        }
+    },
+    {
+        "combination": "Bovada (Bragantino) - DraftKings (Internacional) - bet365 (Draw)",
+        "implied_probability": 0.44112554112554114,
+        "odds": [
+            14.0,
+            15.0,
+            3.3
+        ],
+        "date": "25-09-2024",
+        "teams": [
+            "Bragantino",
+            "Internacional"
+        ],
+        "expected_return": 55.887445887445885,
+        "average_odds": 7.874691358024691,
+        "volatility": 6.63616019707601,
+        "house_odds": {
+            "Bovada": {
+                "odd_a": 14.0,
+                "odd_b": 12.0,
+                "draw": 1.0666666666666667
+            },
+            "DraftKings": {
+                "odd_a": 19.0,
+                "odd_b": 15.0,
+                "draw": 1.0555555555555556
+            },
+            "bet365": {
+                "odd_a": 3.2,
+                "odd_b": 2.25,
+                "draw": 3.3
+            }
+        }
+    },
+    {
+        "combination": "Bovada (Bragantino) - DraftKings (Internacional) - betclic (Draw)",
+        "implied_probability": 0.4575840559866119,
+        "odds": [
+            14.0,
+            15.0,
+            3.13
+        ],
+        "date": "25-09-2024",
+        "teams": [
+            "Bragantino",
+            "Internacional"
+        ],
+        "expected_return": 54.24159440133881,
+        "average_odds": 7.845802469135801,
+        "volatility": 6.655640280129702,
+        "house_odds": {
+            "Bovada": {
+                "odd_a": 14.0,
+                "odd_b": 12.0,
+                "draw": 1.0666666666666667
+            },
+            "DraftKings": {
+                "odd_a": 19.0,
+                "odd_b": 15.0,
+                "draw": 1.0555555555555556
+            },
+            "betclic": {
+                "odd_a": 3.05,
+                "odd_b": 2.31,
+                "draw": 3.13
+            }
+        }
+    },
+    {
+        "combination": "FanDuel (Gr\u00eamio) - Bovada (Criciuma) - DraftKings (Draw)",
+        "implied_probability": 0.9858716475095785,
+        "odds": [
+            29.0,
+            1.125,
+            16.0
+        ],
+        "date": "25-09-2024",
+        "teams": [
+            "Gr\u00eamio",
+            "Criciuma"
+        ],
+        "expected_return": 1.4128352490421547,
+        "average_odds": 20.663257575757576,
+        "volatility": 25.148510123057985,
+        "house_odds": {
+            "FanDuel": {
+                "odd_a": 29.0,
+                "odd_b": 1.1818181818181819,
+                "draw": 4.9
+            },
+            "Bovada": {
+                "odd_a": 76.0,
+                "odd_b": 1.125,
+                "draw": 5.75
+            },
+            "DraftKings": {
+                "odd_a": 51.0,
+                "odd_b": 1.0125,
+                "draw": 16.0
+            }
+        }
+    },
+    {
+        "combination": "FanDuel (Gr\u00eamio) - Bovada (Criciuma) - BetMGM (Draw)",
+        "implied_probability": 0.9733716475095785,
+        "odds": [
+            29.0,
+            1.125,
+            20.0
+        ],
+        "date": "25-09-2024",
+        "teams": [
+            "Gr\u00eamio",
+            "Criciuma"
+        ],
+        "expected_return": 2.6628352490421503,
+        "average_odds": 34.997424242424245,
+        "volatility": 54.80307968513455,
+        "house_odds": {
+            "FanDuel": {
+                "odd_a": 29.0,
+                "odd_b": 1.1818181818181819,
+                "draw": 4.9
+            },
+            "Bovada": {
+                "odd_a": 76.0,
+                "odd_b": 1.125,
+                "draw": 5.75
+            },
+            "BetMGM": {
+                "odd_a": 176.0,
+                "odd_b": 1.02,
+                "draw": 20.0
+            }
+        }
+    },
+    {
+        "combination": "DraftKings (Gr\u00eamio) - FanDuel (Criciuma) - BetMGM (Draw)",
+        "implied_probability": 0.9157616892911011,
+        "odds": [
+            51.0,
+            1.1818181818181819,
+            20.0
+        ],
+        "date": "25-09-2024",
+        "teams": [
+            "Gr\u00eamio",
+            "Criciuma"
+        ],
+        "expected_return": 8.423831070889886,
+        "average_odds": 33.346035353535356,
+        "volatility": 52.803461151573735,
+        "house_odds": {
+            "DraftKings": {
+                "odd_a": 51.0,
+                "odd_b": 1.0125,
+                "draw": 16.0
+            },
+            "FanDuel": {
+                "odd_a": 29.0,
+                "odd_b": 1.1818181818181819,
+                "draw": 4.9
+            },
+            "BetMGM": {
+                "odd_a": 176.0,
+                "odd_b": 1.02,
+                "draw": 20.0
+            }
+        }
+    },
+    {
+        "combination": "DraftKings (Gr\u00eamio) - Bovada (Criciuma) - BetMGM (Draw)",
+        "implied_probability": 0.9584967320261438,
+        "odds": [
+            51.0,
+            1.125,
+            20.0
+        ],
+        "date": "25-09-2024",
+        "teams": [
+            "Gr\u00eamio",
+            "Criciuma"
+        ],
+        "expected_return": 4.150326797385617,
+        "average_odds": 38.656388888888884,
+        "volatility": 54.36149174624021,
+        "house_odds": {
+            "DraftKings": {
+                "odd_a": 51.0,
+                "odd_b": 1.0125,
+                "draw": 16.0
+            },
+            "Bovada": {
+                "odd_a": 76.0,
+                "odd_b": 1.125,
+                "draw": 5.75
+            },
+            "BetMGM": {
+                "odd_a": 176.0,
+                "odd_b": 1.02,
+                "draw": 20.0
+            }
+        }
+    },
+    {
+        "combination": "Bovada (Gr\u00eamio) - FanDuel (Criciuma) - DraftKings (Draw)",
+        "implied_probability": 0.9218117408906883,
+        "odds": [
+            76.0,
+            1.1818181818181819,
+            16.0
+        ],
+        "date": "25-09-2024",
+        "teams": [
+            "Gr\u00eamio",
+            "Criciuma"
+        ],
+        "expected_return": 7.818825910931171,
+        "average_odds": 20.663257575757576,
+        "volatility": 25.148510123057985,
+        "house_odds": {
+            "Bovada": {
+                "odd_a": 76.0,
+                "odd_b": 1.125,
+                "draw": 5.75
+            },
+            "FanDuel": {
+                "odd_a": 29.0,
+                "odd_b": 1.1818181818181819,
+                "draw": 4.9
+            },
+            "DraftKings": {
+                "odd_a": 51.0,
+                "odd_b": 1.0125,
+                "draw": 16.0
+            }
+        }
+    },
+    {
+        "combination": "Bovada (Gr\u00eamio) - FanDuel (Criciuma) - BetMGM (Draw)",
+        "implied_probability": 0.9093117408906883,
+        "odds": [
+            76.0,
+            1.1818181818181819,
+            20.0
+        ],
+        "date": "25-09-2024",
+        "teams": [
+            "Gr\u00eamio",
+            "Criciuma"
+        ],
+        "expected_return": 9.068825910931167,
+        "average_odds": 34.997424242424245,
+        "volatility": 54.80307968513455,
+        "house_odds": {
+            "Bovada": {
+                "odd_a": 76.0,
+                "odd_b": 1.125,
+                "draw": 5.75
+            },
+            "FanDuel": {
+                "odd_a": 29.0,
+                "odd_b": 1.1818181818181819,
+                "draw": 4.9
+            },
+            "BetMGM": {
+                "odd_a": 176.0,
+                "odd_b": 1.02,
+                "draw": 20.0
+            }
+        }
+    },
+    {
+        "combination": "BetMGM (Gr\u00eamio) - FanDuel (Criciuma) - DraftKings (Draw)",
+        "implied_probability": 0.9143356643356644,
+        "odds": [
+            176.0,
+            1.1818181818181819,
+            16.0
+        ],
+        "date": "25-09-2024",
+        "teams": [
+            "Gr\u00eamio",
+            "Criciuma"
+        ],
+        "expected_return": 8.566433566433563,
+        "average_odds": 33.346035353535356,
+        "volatility": 52.803461151573735,
+        "house_odds": {
+            "BetMGM": {
+                "odd_a": 176.0,
+                "odd_b": 1.02,
+                "draw": 20.0
+            },
+            "FanDuel": {
+                "odd_a": 29.0,
+                "odd_b": 1.1818181818181819,
+                "draw": 4.9
+            },
+            "DraftKings": {
+                "odd_a": 51.0,
+                "odd_b": 1.0125,
+                "draw": 16.0
+            }
+        }
+    },
+    {
+        "combination": "BetMGM (Gr\u00eamio) - Bovada (Criciuma) - DraftKings (Draw)",
+        "implied_probability": 0.9570707070707071,
+        "odds": [
+            176.0,
+            1.125,
+            16.0
+        ],
+        "date": "25-09-2024",
+        "teams": [
+            "Gr\u00eamio",
+            "Criciuma"
+        ],
+        "expected_return": 4.292929292929292,
+        "average_odds": 38.656388888888884,
+        "volatility": 54.36149174624021,
+        "house_odds": {
+            "BetMGM": {
+                "odd_a": 176.0,
+                "odd_b": 1.02,
+                "draw": 20.0
+            },
+            "Bovada": {
+                "odd_a": 76.0,
+                "odd_b": 1.125,
+                "draw": 5.75
+            },
+            "DraftKings": {
+                "odd_a": 51.0,
+                "odd_b": 1.0125,
+                "draw": 16.0
+            }
+        }
+    }
+]
