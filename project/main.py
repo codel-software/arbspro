@@ -108,12 +108,21 @@ def identify_surebets(matches):
         retorno_minimo = 0
         retorno_maximo = 0
     # Criando a mensagem no formato desejado
+    hora_atual = datetime.now().hour
+    if 6 <= hora_atual < 12:
+        periodo = "Manhã"
+    elif 12 <= hora_atual < 18:
+        periodo = "Tarde"
+    else:
+        periodo = "Noite"
+
+    # Criar a mensagem com o período dinâmico
     message = (
         "📝 *Relatório Diário | Surebets Pre-match*\n\n"
         f"📊 *Total de Surebets Analisadas:* {len(count)}\n"
         f"📈 *Retorno Mínimo Identificado:* {retorno_minimo:.2f}%\n"
         f"📉 *Retorno Máximo Identificado:* {retorno_maximo:.2f}%\n"
-        f"⏰ *Período:* Manhã\n\n"
+        f"⏰ *Período:* {periodo}\n\n"
         "🔗 [Clique aqui para acessar sua lista personalizada.](http://app.referee.bet/)\n"
     )
     enviar_mensagem_telegram(message)
