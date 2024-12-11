@@ -2,9 +2,9 @@ import requests
 import json
 
 
-def scrape_matches(houseBet,game_type,type_name):
+def scrape_matches(houseBet, game_type, type_name):
     headers = {
-        'User-Agent': 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Mobile Safari/537.36'
+        'User-Agent': 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Mobile Safari/537.36'
     }
 
     url = 'https://s5.sir.sportradar.com/' + \

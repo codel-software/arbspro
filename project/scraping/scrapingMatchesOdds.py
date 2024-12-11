@@ -5,18 +5,20 @@ from datetime import datetime
 team_mapping = {
     "Vasco da Gama": "Vasco Gama",
     "Bragantino-SP": "Bragantino",
-    "Cuiabá" : "Cuiabá EC"
+    "Cuiabá": "Cuiabá EC"
 }
+
 
 def normalize_team_name(name):
     return team_mapping.get(name, name)
+
 
 def getOddsApi():
     key = '9c448318f44a5d30f12fe7fbb2e1cf3a'
     url = 'https://api.the-odds-api.com/v4/sports/soccer_brazil_campeonato/odds/?apiKey=' + \
         key+'&regions=us&markets=h2h,spreads&oddsFormat=american'
     headers = {
-        'User-Agent': 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Mobile Safari/537.36'
+        'User-Agent': 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Mobile Safari/537.36'
     }
     response = requests.get(url, headers=headers)
 
@@ -46,17 +48,20 @@ def getOddsApi():
                         for outcome in market['outcomes']:
                             if outcome['name'] == home_team:
                                 if outcome['price'] < 0:
-                                    home_odds = 1 +  (100 / abs(outcome['price']))
+                                    home_odds = 1 + \
+                                        (100 / abs(outcome['price']))
                                 else:
                                     home_odds = 1 + (outcome['price'] / 100)
                             elif outcome['name'] == away_team:
                                 if outcome['price'] < 0:
-                                    away_odds = 1 + (100 / abs(outcome['price']))
+                                    away_odds = 1 + \
+                                        (100 / abs(outcome['price']))
                                 else:
                                     away_odds = 1 + (outcome['price'] / 100)
                             elif outcome['name'] == "Draw":
                                 if outcome['price'] < 0:
-                                    draw_odds = 1 +  (100 / abs(outcome['price']))
+                                    draw_odds = 1 + \
+                                        (100 / abs(outcome['price']))
                                 else:
                                     draw_odds = 1 + (outcome['price'] / 100)
                 normalized_home_team = normalize_team_name(home_team)

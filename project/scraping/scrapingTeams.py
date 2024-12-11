@@ -2,15 +2,18 @@ import requests
 import json
 
 
-def scrape_teams(houseBet,game_type,type_name):
+def scrape_teams(houseBet, game_type, type_name):
     headers = {
-        'User-Agent': 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Mobile Safari/537.36'
+        'User-Agent': 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Mobile Safari/537.36'
     }
 
     url = 'https://stats.fn.sportradar.com/'+houseBet + \
         '/br/America:Montevideo/gismo/stats_season_fixtures2/'+game_type+'/1'
 
     response = requests.get(url, headers=headers)
+
+    print(str(response.status_code))
+    print(url)
 
     html_content = response.text
     objeto_python = json.loads(html_content)

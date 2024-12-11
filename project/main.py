@@ -125,8 +125,15 @@ def main():
         h.loadJson(pathJson=house)
         for i in h.match_list:
             list_house_odds.append(i)
+
     surebets = identify_surebets(list_house_odds)
     calculo = getSurebets(surebets)
+
+    # Salvar o resultado em public/data.json
+    with open('public/data.json', 'w') as json_file:
+        json.dump(calculo, json_file, indent=4)
+
+    print(calculo)
     return calculo
 
 
@@ -146,6 +153,7 @@ def tempo_ate_proximo_horario():
 
 
 while True:
+
     get_surebets = main()
     tempo_de_espera = tempo_ate_proximo_horario()
     time.sleep(tempo_de_espera)
