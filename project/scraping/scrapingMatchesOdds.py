@@ -21,7 +21,8 @@ def getOddsApi():
         'User-Agent': 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Mobile Safari/537.36'
     }
     response = requests.get(url, headers=headers)
-
+    if response.json() == []:
+        return []
     if response.status_code == 200:
         # html_content = response.text.split("window.__INITIAL_STATE__=", 1)[-1]
         data = response.json()

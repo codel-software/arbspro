@@ -4,7 +4,7 @@ from datetime import datetime
 
 
 def getOldds():
-    key = 'f1a81edf0e979ab9669a3e6a983ff19a'
+    key = 'f19eb2c6a758f6365212e06010b61166'
     url = 'https://api.the-odds-api.com/v4/sports/soccer_brazil_campeonato/odds/?apiKey=' + \
         key+'&regions=us&markets=h2h,spreads&oddsFormat=american'
     headers = {

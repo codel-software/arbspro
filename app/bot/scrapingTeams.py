@@ -1,3 +1,4 @@
+import os
 import requests
 import json
 
@@ -24,7 +25,13 @@ def scrape_teams(houseBet):
         if 'data' in primeiro_item:
             dados = primeiro_item['data']
             matches = dados['matches']
-            caminho_arquivo = "../scriptJson/teams-"+houseBet+".json"
+            caminho_diretorio = "./json"
+            caminho_arquivo = f"{caminho_diretorio}/teams-{houseBet}.json"
+
+            # Criar o diretório, se não existir
+            os.makedirs(caminho_diretorio, exist_ok=True)
+
+            # Gravar o arquivo JSON
             with open(caminho_arquivo, "w") as arquivo_saida:
                 json.dump(matches, arquivo_saida)
 

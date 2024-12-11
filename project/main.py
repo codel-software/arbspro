@@ -16,6 +16,7 @@ def calculate_surebet(odds_a, odds_b, draw_odds):
 def identify_surebets(matches):
     surebets = []
     combinations = []
+    count = []
     today = datetime.now().date()
     end_date = today + timedelta(days=4)
 
@@ -31,6 +32,7 @@ def identify_surebets(matches):
             grouped_matches[key] = []
         grouped_matches[key].append(match)
     # Identificar surebets
+
     for key, match_list in grouped_matches.items():
         n = len(match_list)
         for i in range(n):
@@ -40,6 +42,7 @@ def identify_surebets(matches):
                 for k in range(n):
                     if k == i or k == j:
                         continue
+                    count = count + 1
                     # Combinações distintas
                     odds_a = match_list[i].odds_a
                     odds_b = match_list[j].odds_b
@@ -95,10 +98,23 @@ def identify_surebets(matches):
                                 }
                             }
                         })
+    # Calcula o retorno mínimo e máximo
+    if surebets:
+        retorno_minimo = min([surebet['expected_return']
+                             for surebet in surebets])
+        retorno_maximo = max([surebet['expected_return']
+                             for surebet in surebets])
+    else:
+        retorno_minimo = 0
+        retorno_maximo = 0
+    # Criando a mensagem no formato desejado
     message = (
-        "**!!Busca de surebets!!**\n"
-        f"**Qtde de combinações:** {len(combinations)}\n"
-        f"**Qtde de surebets encontradas:** {len(surebets)}\n"
+        "📝 *Relatório Diário | Surebets Pre-match*\n\n"
+        f"📊 *Total de Surebets Analisadas:* {len(count)}\n"
+        f"📈 *Retorno Mínimo Identificado:* {retorno_minimo:.2f}%\n"
+        f"📉 *Retorno Máximo Identificado:* {retorno_maximo:.2f}%\n"
+        f"⏰ *Período:* Manhã\n\n"
+        "🔗 [Clique aqui para acessar sua lista personalizada.](http://app.referee.bet/)\n"
     )
     enviar_mensagem_telegram(message)
     # Converte para JSON com indentação
@@ -125,7 +141,6 @@ def main():
         h.loadJson(pathJson=house)
         for i in h.match_list:
             list_house_odds.append(i)
-
     surebets = identify_surebets(list_house_odds)
     calculo = getSurebets(surebets)
 
@@ -133,7 +148,6 @@ def main():
     with open('public/data.json', 'w') as json_file:
         json.dump(calculo, json_file, indent=4)
 
-    print(calculo)
     return calculo
 
 
