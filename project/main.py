@@ -109,6 +109,7 @@ def identify_surebets(matches):
         retorno_maximo = 0
     # Criando a mensagem no formato desejado
     hora_atual = datetime.now().hour
+    hora_atual = hora_atual - 3  # fuso horario
     if 6 <= hora_atual < 12:
         periodo = "Manhã"
     elif 12 <= hora_atual < 18:
